@@ -22,19 +22,25 @@ namespace ProjectRapChieuPhim
             User user = new User();
             user.SoDienThoai = txtBoxSDT.Text;
             user.MatKhau = txtBoxMatKhau.Text;
-            if (user.MatKhau == "" || user.SoDienThoai == "")
+            if (user.SoDienThoai == "" || user.MatKhau == "")
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
             }
             else
             {
-                if (user.dangNhap(user.SoDienThoai, user.MatKhau) > 0)
+                int vaiTro = user.dangNhap(user.SoDienThoai, user.MatKhau);
+                switch (vaiTro)
                 {
-                    MessageBox.Show("Đăng nhập thành công");
-                }
-                else
-                {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu của bạn sai");
+                    case 1:
+                        Form1 form1 = new Form1();
+                        form1.Show();
+                        break;
+                    case 2: case 3:
+                        MessageBox.Show("Đăng nhập thành công");
+                        break;
+                    default:
+                        MessageBox.Show("Đăng nhập thất bại");
+                        break;
                 }
             }
         }

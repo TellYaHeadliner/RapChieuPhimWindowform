@@ -1,26 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 
 
 namespace ProjectRapChieuPhim
 {
     internal class User
     {
-        private string soDienThoai;
-        private string matKhau;
-        private string TenNguoiDung;
-        private int vaiTro;
-        private bool trangThai;
-        private string connectdb = "Data Source=localhost;Initial Catalog=CINEMA;Integrated Security=True;";
+        protected string soDienThoai;
+        protected string matKhau;
+        protected string tenNguoiDung;
+        protected string connectdb = "Data Source=localhost;Initial Catalog=CINEMA;Integrated Security=True;";
 
         public User() { }
-        public string SoDienThoai {
-            get { return soDienThoai; } 
+        public string SoDienThoai
+        {
+            get { return soDienThoai; }
             set { this.soDienThoai = value; }
         }
 
@@ -30,65 +25,44 @@ namespace ProjectRapChieuPhim
             set { this.matKhau = value; }
         }
 
-        public int dangNhap(string SDT, string matKhau)
-        {
-            int count = 0;
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(connectdb))
-                {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand("dbo.DANGNHAP", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    
-                    SqlParameter paramSDT = new SqlParameter("@SDT", SqlDbType.Char, 10);
-                    paramSDT.Value = SDT;
-                    cmd.Parameters.Add(paramSDT);
-
-                    SqlParameter paramMatKhau = new SqlParameter("@matKhau", SqlDbType.Char, 16);
-                    paramMatKhau.Value = matKhau;
-                    cmd.Parameters.Add(paramMatKhau);
-
-                    count = (int)cmd.ExecuteScalar();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-  
-            return count;
-            
+        public string TenNguoiDung {
+            get { return tenNguoiDung; }
+            set { this.tenNguoiDung = value ; } 
         }
 
-        private void checkAdmin()
+        public int dangNhap(string SDT, string matKhau)
         {
-            int count = 0;
+            int vaiTro = 0;
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectdb))
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("dbo.DANGNHAP", conn);
+                    SqlCommand cmd = new SqlCommand("dangNhap", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    SqlParameter paramSDT = new SqlParameter("@SDT", SqlDbType.Char, 10);
-                    paramSDT.Value = SDT;
-                    cmd.Parameters.Add(paramSDT);
+                    // Thêm tham số vào stored procedure
+                    cmd.Parameters.AddWithValue("@SDT", SDT);
+                    cmd.Parameters.AddWithValue("@matKhau", matKhau);
 
-                    SqlParameter paramMatKhau = new SqlParameter("@matKhau", SqlDbType.Char, 16);
-                    paramMatKhau.Value = matKhau;
-                    cmd.Parameters.Add(paramMatKhau);
+                    // Thêm tham số đầu ra
+                    SqlParameter outputVaiTro = new SqlParameter("@vaiTro", SqlDbType.Int);
+                    outputVaiTro.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(outputVaiTro);
 
-                    count = (int)cmd.ExecuteScalar();
+                    // Thực thi stored procedure
+                    cmd.ExecuteNonQuery();
+
+                    // Lấy giá trị của biến vaiTro từ tham số đầu ra
+                    vaiTro = (int)outputVaiTro.Value;
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                // Xử lý lỗi
+                Console.WriteLine("Lỗi đăng nhập: " + ex.Message);
             }
-
-            return count;
-        } 
+            return vaiTro;
+        }
     }
 }
