@@ -73,6 +73,26 @@ namespace DOANMONHOC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chuongcothongbao {
+            get {
+                object obj = ResourceManager.GetObject("chuongcothongbao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chuongkhongthongbao {
+            get {
+                object obj = ResourceManager.GetObject("chuongkhongthongbao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kinhlup {
             get {
                 object obj = ResourceManager.GetObject("kinhlup", resourceCulture);
