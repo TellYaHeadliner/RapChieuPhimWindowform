@@ -1,0 +1,10 @@
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\bin\Debug\DOANMONHOC.exe.config
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\bin\Debug\DOANMONHOC.exe
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\bin\Debug\DOANMONHOC.pdb
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\obj\Debug\DOANMONHOC.csproj.AssemblyReference.cache
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\obj\Debug\DOANMONHOC.TrangChu.resources
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\obj\Debug\DOANMONHOC.Properties.Resources.resources
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\obj\Debug\DOANMONHOC.csproj.GenerateResource.cache
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\obj\Debug\DOANMONHOC.csproj.CoreCompileInputs.cache
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\obj\Debug\DOANMONHOC.exe
+D:\Study\IT\LT Windown\DOANMONHOC\DOANMONHOC\obj\Debug\DOANMONHOC.pdb
