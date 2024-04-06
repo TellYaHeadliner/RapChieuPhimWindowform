@@ -1,4 +1,7 @@
-﻿namespace DOANMONHOC
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace DOANMONHOC
 {
     partial class TrangChu
     {
@@ -28,33 +31,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.search = new System.Windows.Forms.TextBox();
             this.tblTuyChon = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.settingTK = new System.Windows.Forms.Button();
             this.soDT = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.tinTuc = new System.Windows.Forms.Panel();
             this.thongBao = new System.Windows.Forms.Button();
-            this.timKiem = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.btnTuyChon = new System.Windows.Forms.Button();
             this.tblTuyChon.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // search
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(62, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(867, 31);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "hello";
+            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search.Location = new System.Drawing.Point(62, 18);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(867, 31);
+            this.search.TabIndex = 1;
+            this.search.Tag = "";
+            this.search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.search_KeyDown);
             // 
             // tblTuyChon
             // 
             this.tblTuyChon.Controls.Add(this.button2);
-            this.tblTuyChon.Controls.Add(this.button1);
+            this.tblTuyChon.Controls.Add(this.settingTK);
             this.tblTuyChon.Controls.Add(this.soDT);
             this.tblTuyChon.Controls.Add(this.userName);
             this.tblTuyChon.Location = new System.Drawing.Point(12, 62);
@@ -74,15 +78,16 @@
             this.button2.Text = "Đăng xuất";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // settingTK
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(46, 74);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tài khoản";
-            this.button1.UseVisualStyleBackColor = true;
+            this.settingTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingTK.Location = new System.Drawing.Point(46, 74);
+            this.settingTK.Name = "settingTK";
+            this.settingTK.Size = new System.Drawing.Size(128, 31);
+            this.settingTK.TabIndex = 2;
+            this.settingTK.Text = "Tài khoản";
+            this.settingTK.UseVisualStyleBackColor = true;
+            this.settingTK.Click += new System.EventHandler(this.settingTK_Click);
             // 
             // soDT
             // 
@@ -126,7 +131,6 @@
             // 
             this.thongBao.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.thongBao.BackgroundImage = global::DOANMONHOC.Properties.Resources.chuongcothongbao;
-
             this.thongBao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.thongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thongBao.Location = new System.Drawing.Point(940, 60);
@@ -135,18 +139,18 @@
             this.thongBao.TabIndex = 7;
             this.thongBao.UseVisualStyleBackColor = false;
             // 
-            // timKiem
+            // btnSearch
             // 
-            this.timKiem.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.timKiem.BackgroundImage = global::DOANMONHOC.Properties.Resources.kinhlup;
-            this.timKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.timKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timKiem.Location = new System.Drawing.Point(935, 11);
-            this.timKiem.Name = "timKiem";
-            this.timKiem.Size = new System.Drawing.Size(44, 44);
-            this.timKiem.TabIndex = 2;
-            this.timKiem.UseVisualStyleBackColor = false;
-            this.timKiem.Click += new System.EventHandler(this.timKiem_Click);
+            this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnSearch.BackgroundImage = global::DOANMONHOC.Properties.Resources.kinhlup;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(935, 11);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(44, 44);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.timKiem_Click);
             // 
             // btnTuyChon
             // 
@@ -168,8 +172,8 @@
             this.Controls.Add(this.thongBao);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.tblTuyChon);
-            this.Controls.Add(this.timKiem);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.search);
             this.Controls.Add(this.btnTuyChon);
             this.Controls.Add(this.tinTuc);
             this.Name = "TrangChu";
@@ -185,13 +189,13 @@
         #endregion
 
         private System.Windows.Forms.Button btnTuyChon;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button timKiem;
+        private System.Windows.Forms.TextBox search;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox tblTuyChon;
         private System.Windows.Forms.Label soDT;
         private System.Windows.Forms.Label userName;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button settingTK;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel tinTuc;
         private System.Windows.Forms.Button thongBao;

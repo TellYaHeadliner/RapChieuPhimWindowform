@@ -93,4 +93,7 @@
     <None Include="Pictures\chuongcothongbao.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /y "$(ProjectDir)Pictures" "$(TargetDir)Pictures\"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
