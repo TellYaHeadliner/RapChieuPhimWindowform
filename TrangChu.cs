@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -16,6 +17,7 @@ namespace DOANMONHOC
 {
     public partial class TrangChu : Form
     {
+        //listThongBao bề ngang được 49 ký tự
         private string sdt;
         private bool nhapSearch = false;
         SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=CINEMA_2;Integrated Security=True;");
@@ -28,6 +30,82 @@ namespace DOANMONHOC
         {
             quetThongTin();
             nhanTinTuc();
+            //tạo một luồng xét thông báo
+            Thread iconThongBao = new Thread(changeIconThongBao);
+            iconThongBao.IsBackground = true;
+            iconThongBao.Start();
+            nhanThongBao();
+        }
+
+        //Nhan va thay doi thong bao
+        private void changeIconThongBao()
+        {
+            //Liên kết sql
+            SqlCommand cmd = new SqlCommand("select thongBao from TAIKHOAN where soDienThoai = '" + sdt + "'", conn);
+            SqlDataReader dr;
+            DataTable ttThongBao = new DataTable();
+
+            //Lặp lại liên tục để xét có thông báo mới không sẽ hiển thị chuông có chấm đỏ
+            while (true)
+            {
+                try
+                {
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+                    dr = cmd.ExecuteReader();
+                    ttThongBao = new DataTable();
+                    ttThongBao.Load(dr);
+                    if (ttThongBao.Rows[0][0].ToString().Trim() == "True")
+                    {
+                        thongBao.BackgroundImage = Image.FromFile(".\\Pictures\\chuongcothongbao.png");
+                        nhanThongBao();
+                    }
+                }
+                catch (Exception ex) { }
+                //Đặt thời gian chờ 1 phút
+                Thread.Sleep(60000);
+            }
+            conn.Close();
+        }
+
+        //Thêm thông báo vào listbox thông báo
+        private void nhanThongBao()
+        {
+            // Nếu không ở trong luồng giao diện người dùng chính, sử dụng Invoke để gọi lại hàm từ luồng giao diện người dùng chính
+            if (listThongBao.InvokeRequired)
+            {
+                listThongBao.Invoke(new MethodInvoker(delegate { nhanThongBao(); }));
+            }
+            else
+                try
+                {
+                    //Kết nối sql và lấy dữ liệu trong table thông báo
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+                    SqlCommand cmd = new SqlCommand("select ngayDang,thongTin from THONGBAO ORDER BY ngayDang DESC", conn);
+                    SqlDataReader dr=cmd.ExecuteReader();
+                    DataTable tb = new DataTable();
+                    tb.Load(dr);
+                    //xóa hết thông báo rồi thêm từng row trong table vào
+                    listThongBao.Items.Clear();
+                    foreach (DataRow row in tb.Rows)
+                    {
+                        string date = row[0].ToString().Trim();
+                        string thongTin = row[1].ToString().Trim();
+                        int flag = 0;
+                        listThongBao.Items.Add(date);
+                        //cắt chuỗi ra thành từng item nhỏ để không vượt ra ngoài listbox
+                        for (int i = 57; i < thongTin.Length; i += 57)
+                        {
+                            //quay về đúng khoảng trắng để không cắt giữa chữ
+                            for (; thongTin[i] != ' '; i--) ;
+                            listThongBao.Items.Add(thongTin.Substring(flag, i - flag));
+                            flag = i + 1;
+                        }
+                        listThongBao.Items.Add(thongTin.Substring(flag, thongTin.Length - 1 - flag + 1));
+                        listThongBao.Items.Add("------------------------------------------------------------------------");
+                    }
+                }catch (Exception ex) { }
         }
 
         //Lấy thông tin về user name để hiển thị trong mục tùy chọn
@@ -47,7 +125,7 @@ namespace DOANMONHOC
         }
 
         //Lấy tin tức từ database để hiển thị trong giao diện
-        private void nhanTinTuc( string searchh = " "){
+        private void nhanTinTuc(string searchh = " ") {
             try
             {
                 tinTuc.Controls.Clear();
@@ -113,9 +191,9 @@ namespace DOANMONHOC
                         DataTable tentacgia = new DataTable();
                         rd = new SqlCommand("EXEC dbo.getUserName '" + row[4].ToString().Trim() + "'", conn).ExecuteReader();
                         tentacgia.Load(rd);
-                        tacGia.Text = "By: " + tentacgia.Rows[0][0].ToString().Trim() +".";
-                        ngayDang.Text = "Date: "+ (DateTime.Parse(row[3].ToString().Trim())).ToString("dd/MM/yyyy")+".";
-                        luotXem.Text = "Views: "+row[7].ToString().Trim()+".";
+                        tacGia.Text = "By: " + tentacgia.Rows[0][0].ToString().Trim() + ".";
+                        ngayDang.Text = "Date: " + (DateTime.Parse(row[3].ToString().Trim())).ToString("dd/MM/yyyy") + ".";
+                        luotXem.Text = "Views: " + row[7].ToString().Trim() + ".";
                         //Đặt size cho hình ảnh-> đặt lại size của picturebox -> căn chỉnh picture box nằm giữa theo chiều dọc
                         try
                         {
@@ -123,7 +201,7 @@ namespace DOANMONHOC
                             Image imgReSize = reSizeImage(img, hAnh.Width, img.Height * hAnh.Width / img.Width);
                             hAnh.Image = imgReSize;
                             hAnh.Size = new Size(imgReSize.Width, imgReSize.Height);
-                            hAnh.Location = new System.Drawing.Point(740, rgb.Height-(imgReSize.Height/2 + imgReSize.Height));
+                            hAnh.Location = new System.Drawing.Point(740, rgb.Height - (imgReSize.Height / 2 + imgReSize.Height));
                         }
                         catch (Exception ex) { }
 
@@ -185,12 +263,35 @@ namespace DOANMONHOC
                 tblTuyChon.Visible = !tblTuyChon.Visible;
         }
 
+        //Bật tắt thông báo và đặt trạng thái thông báo về 0
+        private void thongBao_Click(object sender, EventArgs e)
+        {
+            //Bật tắt thông báo
+            listThongBao.Visible = !listThongBao.Visible;
+            //Khi thông báo bật lên sẽ đặt trạng thái thông báo của tài khoản thành 0
+            if (listThongBao.Visible)
+            {
+                try
+                {
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+                    SqlCommand cmd = new SqlCommand("update TAIKHOAN set thongBao = 0 where soDienThoai = '" + sdt + "'", conn);
+                    thongBao.BackgroundImage = Image.FromFile(".\\Pictures\\chuongkhongthongbao.png");
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception err) { }
+                conn.Close();
+            }
+        }
+
         //Sử lý sự kiện khi người dùng nhấn vào một tin tức
         private void groupBox_Click(object sender, EventArgs e)
         {
             //Lấy id bài viết
             string id = (sender as Control).Name.Split('/')[1];
-            // Xử lý logic khi người dùng nhấp vào GroupBox
+            // Xử lý logic khi người dùng nhấp vào GroupBox ai làm phần này nhớ cộng lượt xem khi ấn vào
+            //lưu ý id người ấn vào trùng với id người đăng sẽ không cộng lượt xem.
+            //gợi ý sử dung id trong phương thức này select sdt from TINTUC xem sdt có trùng với biến private string sdt không
             MessageBox.Show("ID tin tức " + id);
         }
 
@@ -199,5 +300,12 @@ namespace DOANMONHOC
         {
             //sdt đã được lưu ở biến private string sdt
         }
+
+        //Đăng xuất
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

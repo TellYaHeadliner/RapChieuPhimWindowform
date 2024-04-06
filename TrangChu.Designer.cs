@@ -33,7 +33,7 @@ namespace DOANMONHOC
         {
             this.search = new System.Windows.Forms.TextBox();
             this.tblTuyChon = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.settingTK = new System.Windows.Forms.Button();
             this.soDT = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@ namespace DOANMONHOC
             this.thongBao = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnTuyChon = new System.Windows.Forms.Button();
+            this.listThongBao = new System.Windows.Forms.ListBox();
             this.tblTuyChon.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@ namespace DOANMONHOC
             // 
             // tblTuyChon
             // 
-            this.tblTuyChon.Controls.Add(this.button2);
+            this.tblTuyChon.Controls.Add(this.btnDangXuat);
             this.tblTuyChon.Controls.Add(this.settingTK);
             this.tblTuyChon.Controls.Add(this.soDT);
             this.tblTuyChon.Controls.Add(this.userName);
@@ -68,15 +69,16 @@ namespace DOANMONHOC
             this.tblTuyChon.TabStop = false;
             this.tblTuyChon.Visible = false;
             // 
-            // button2
+            // btnDangXuat
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(46, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 31);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Đăng xuất";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Location = new System.Drawing.Point(46, 123);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(128, 31);
+            this.btnDangXuat.TabIndex = 3;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // settingTK
             // 
@@ -130,7 +132,7 @@ namespace DOANMONHOC
             // thongBao
             // 
             this.thongBao.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.thongBao.BackgroundImage = global::DOANMONHOC.Properties.Resources.chuongcothongbao;
+            this.thongBao.BackgroundImage = global::DOANMONHOC.Properties.Resources.chuongkhongthongbao;
             this.thongBao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.thongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thongBao.Location = new System.Drawing.Point(940, 60);
@@ -138,6 +140,7 @@ namespace DOANMONHOC
             this.thongBao.Size = new System.Drawing.Size(35, 35);
             this.thongBao.TabIndex = 7;
             this.thongBao.UseVisualStyleBackColor = false;
+            this.thongBao.Click += new System.EventHandler(this.thongBao_Click);
             // 
             // btnSearch
             // 
@@ -164,11 +167,22 @@ namespace DOANMONHOC
             this.btnTuyChon.UseVisualStyleBackColor = false;
             this.btnTuyChon.Click += new System.EventHandler(this.btnTuyChon_Click);
             // 
+            // listThongBao
+            // 
+            this.listThongBao.FormattingEnabled = true;
+            this.listThongBao.Location = new System.Drawing.Point(644, 98);
+            this.listThongBao.Name = "listThongBao";
+            this.listThongBao.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listThongBao.Size = new System.Drawing.Size(332, 251);
+            this.listThongBao.TabIndex = 8;
+            this.listThongBao.Visible = false;
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 549);
+            this.Controls.Add(this.listThongBao);
             this.Controls.Add(this.thongBao);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.tblTuyChon);
@@ -194,11 +208,12 @@ namespace DOANMONHOC
         private System.Windows.Forms.GroupBox tblTuyChon;
         private System.Windows.Forms.Label soDT;
         private System.Windows.Forms.Label userName;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Button settingTK;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel tinTuc;
         private System.Windows.Forms.Button thongBao;
+        private ListBox listThongBao;
     }
 }
 
