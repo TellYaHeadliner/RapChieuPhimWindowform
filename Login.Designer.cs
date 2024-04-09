@@ -33,18 +33,19 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtBoxSDT = new System.Windows.Forms.TextBox();
             this.txtBoxMatKhau = new System.Windows.Forms.TextBox();
-            this.linkLabelSignUp = new System.Windows.Forms.LinkLabel();
             this.linkLabelForgetPass = new System.Windows.Forms.LinkLabel();
             this.btnDangNhap = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblHeading
             // 
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeading.Location = new System.Drawing.Point(214, 18);
+            this.lblHeading.Location = new System.Drawing.Point(107, 9);
+            this.lblHeading.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(412, 73);
+            this.lblHeading.Size = new System.Drawing.Size(210, 37);
             this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "ĐĂNG NHẬP";
             // 
@@ -52,9 +53,10 @@
             // 
             this.lblSDT.AutoSize = true;
             this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSDT.Location = new System.Drawing.Point(14, 107);
+            this.lblSDT.Location = new System.Drawing.Point(7, 56);
+            this.lblSDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(93, 42);
+            this.lblSDT.Size = new System.Drawing.Size(47, 24);
             this.lblSDT.TabIndex = 1;
             this.lblSDT.Text = "SĐT";
             // 
@@ -62,77 +64,86 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(12, 170);
+            this.lblPassword.Location = new System.Drawing.Point(6, 88);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(199, 51);
+            this.lblPassword.Size = new System.Drawing.Size(101, 26);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Mật khẩu";
             // 
             // txtBoxSDT
             // 
             this.txtBoxSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxSDT.Location = new System.Drawing.Point(208, 104);
+            this.txtBoxSDT.Location = new System.Drawing.Point(104, 54);
+            this.txtBoxSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxSDT.Name = "txtBoxSDT";
-            this.txtBoxSDT.Size = new System.Drawing.Size(630, 49);
+            this.txtBoxSDT.Size = new System.Drawing.Size(317, 28);
             this.txtBoxSDT.TabIndex = 3;
             // 
             // txtBoxMatKhau
             // 
             this.txtBoxMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxMatKhau.Location = new System.Drawing.Point(208, 172);
+            this.txtBoxMatKhau.Location = new System.Drawing.Point(104, 89);
+            this.txtBoxMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxMatKhau.Name = "txtBoxMatKhau";
-            this.txtBoxMatKhau.Size = new System.Drawing.Size(630, 49);
+            this.txtBoxMatKhau.Size = new System.Drawing.Size(317, 28);
             this.txtBoxMatKhau.TabIndex = 4;
-            // 
-            // linkLabelSignUp
-            // 
-            this.linkLabelSignUp.AutoSize = true;
-            this.linkLabelSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelSignUp.Location = new System.Drawing.Point(14, 234);
-            this.linkLabelSignUp.Name = "linkLabelSignUp";
-            this.linkLabelSignUp.Size = new System.Drawing.Size(318, 42);
-            this.linkLabelSignUp.TabIndex = 5;
-            this.linkLabelSignUp.TabStop = true;
-            this.linkLabelSignUp.Text = "Đăng ký tài khoản";
             // 
             // linkLabelForgetPass
             // 
             this.linkLabelForgetPass.AutoSize = true;
             this.linkLabelForgetPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelForgetPass.Location = new System.Drawing.Point(581, 234);
+            this.linkLabelForgetPass.Location = new System.Drawing.Point(7, 126);
+            this.linkLabelForgetPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabelForgetPass.Name = "linkLabelForgetPass";
-            this.linkLabelForgetPass.Size = new System.Drawing.Size(273, 42);
+            this.linkLabelForgetPass.Size = new System.Drawing.Size(139, 24);
             this.linkLabelForgetPass.TabIndex = 6;
             this.linkLabelForgetPass.TabStop = true;
             this.linkLabelForgetPass.Text = "Quên mật khẩu";
+            this.linkLabelForgetPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelForgetPass_LinkClicked);
             // 
             // btnDangNhap
             // 
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(208, 301);
+            this.btnDangNhap.Location = new System.Drawing.Point(6, 161);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(523, 86);
+            this.btnDangNhap.Size = new System.Drawing.Size(188, 44);
             this.btnDangNhap.TabIndex = 7;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
+            // btnSignUp
+            // 
+            this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.Location = new System.Drawing.Point(231, 161);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(188, 45);
+            this.btnSignUp.TabIndex = 8;
+            this.btnSignUp.Text = "Đăng ký";
+            this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(214)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(866, 450);
+            this.ClientSize = new System.Drawing.Size(433, 234);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.linkLabelForgetPass);
-            this.Controls.Add(this.linkLabelSignUp);
             this.Controls.Add(this.txtBoxMatKhau);
             this.Controls.Add(this.txtBoxSDT);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblSDT);
             this.Controls.Add(this.lblHeading);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,8 +156,8 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtBoxSDT;
         private System.Windows.Forms.TextBox txtBoxMatKhau;
-        private System.Windows.Forms.LinkLabel linkLabelSignUp;
         private System.Windows.Forms.LinkLabel linkLabelForgetPass;
         private System.Windows.Forms.Button btnDangNhap;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }

@@ -32,7 +32,7 @@ namespace ProjectRapChieuPhim
                 switch (vaiTro)
                 {
                     case 1:
-                        Form1 form1 = new Form1();
+                        Admin form1 = new Admin(user.SoDienThoai);
                         form1.Show();
                         break;
                     case 2: case 3:
@@ -43,6 +43,23 @@ namespace ProjectRapChieuPhim
                         break;
                 }
             }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            SignUp signUp = new SignUp();
+            signUp.Show();
+        }
+
+        private void linkLabelForgetPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgetPassword forgetPassword = new ForgetPassword();
+            forgetPassword.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

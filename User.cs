@@ -10,6 +10,8 @@ namespace ProjectRapChieuPhim
         protected string soDienThoai;
         protected string matKhau;
         protected string tenNguoiDung;
+        protected string cauHoiBaoMat;
+        protected string cauTraLoiBaoMat;
         protected string connectdb = "Data Source=localhost;Initial Catalog=CINEMA;Integrated Security=True;";
 
         public User() { }
@@ -30,6 +32,16 @@ namespace ProjectRapChieuPhim
             set { this.tenNguoiDung = value ; } 
         }
 
+        public string CauHoiBaoMat {
+            get { return cauHoiBaoMat; }
+            set { this.cauHoiBaoMat = value; } 
+        }
+
+        public string CauTraLoiBaoMat
+        {
+            get { return cauTraLoiBaoMat; }
+            set { this.cauTraLoiBaoMat = value; }
+        }
         public int dangNhap(string SDT, string matKhau)
         {
             int vaiTro = 0;
@@ -55,6 +67,7 @@ namespace ProjectRapChieuPhim
 
                     // Lấy giá trị của biến vaiTro từ tham số đầu ra
                     vaiTro = (int)outputVaiTro.Value;
+                    conn.Close();
                 }
             }
             catch (Exception ex)
@@ -64,5 +77,96 @@ namespace ProjectRapChieuPhim
             }
             return vaiTro;
         }
+
+        public bool dangKi()
+        {
+            using (SqlConnection conn = new SqlConnection(connectdb))
+            {
+                SqlCommand cmd = new SqlCommand("dangKi", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@soDienThoai", soDienThoai);
+                cmd.Parameters.AddWithValue("@matKhau", matKhau);
+                cmd.Parameters.AddWithValue("@tenNguoiDung", tenNguoiDung);
+                cmd.Parameters.AddWithValue("@cauHoiBaoMat", cauHoiBaoMat);
+                cmd.Parameters.AddWithValue("@cauTraLoiBaoMat", cauTraLoiBaoMat);
+
+                try
+                {
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return false;
+
+        }
+
+        public bool quenMatKhau()
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectdb))
+                {
+                    SqlCommand cmd = new SqlCommand("quenMatKhau_getInformation", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@SDT", soDienThoai);
+                    conn.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read() == true)
+                    {
+                        cauHoiBaoMat = reader.GetString(0);
+                        cauTraLoiBaoMat = reader.GetString(1);
+                        SoDienThoai = reader.GetString(2);
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                    conn.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw ex;
+            }
+        }
+
+        public bool updatePassword()
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectdb))
+                {
+                    SqlCommand cmd = new SqlCommand("updateMatKhau", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@matKhauMoi", matKhau);
+                    cmd.Parameters.AddWithValue("@SDT", soDienThoai);
+                    conn.Open();
+                    
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else { return false; }
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw ex;
+            }
+        }
     }
 }
+
