@@ -11,6 +11,7 @@ CREATE TABLE DICHVU(
 CREATE TABLE DICHVUTHEOHOADON(
 	maHoaDon char (10) NOT NULL,
 	maDichVu char (5) NOT NULL,
+	soLuong int default 0
 	PRIMARY KEY(maHoaDon, maDichVu)
 )
 
