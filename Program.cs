@@ -16,7 +16,7 @@ namespace ProjectRapChieuPhim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ForgetPassword());
+            Application.Run(new Login());
         }
     }
 }

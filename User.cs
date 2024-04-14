@@ -53,19 +53,15 @@ namespace ProjectRapChieuPhim
                     SqlCommand cmd = new SqlCommand("dangNhap", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    // Thêm tham số vào stored procedure
                     cmd.Parameters.AddWithValue("@SDT", SDT);
                     cmd.Parameters.AddWithValue("@matKhau", matKhau);
 
-                    // Thêm tham số đầu ra
                     SqlParameter outputVaiTro = new SqlParameter("@vaiTro", SqlDbType.Int);
                     outputVaiTro.Direction = ParameterDirection.Output;
                     cmd.Parameters.Add(outputVaiTro);
 
-                    // Thực thi stored procedure
                     cmd.ExecuteNonQuery();
 
-                    // Lấy giá trị của biến vaiTro từ tham số đầu ra
                     vaiTro = (int)outputVaiTro.Value;
                     conn.Close();
                 }
