@@ -71,12 +71,6 @@
       <DependentUpon>UpdatePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <Compile Include="Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,9 +79,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
