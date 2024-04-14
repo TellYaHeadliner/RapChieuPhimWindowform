@@ -46,34 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForgetPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ForgetPassword.cs" />
     <Compile Include="ForgetPassword.Designer.cs">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Answer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Answer.cs" />
     <Compile Include="Answer.Designer.cs">
       <DependentUpon>Answer.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="SignUp.cs" />
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdatePassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="UpdatePassword.cs" />
     <Compile Include="UpdatePassword.Designer.cs">
       <DependentUpon>UpdatePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Login.cs" />
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
