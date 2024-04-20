@@ -66,7 +66,8 @@ CREATE TABLE TAIKHOAN(
 	vaiTro INT CHECK (vaiTro IN(1,2,3)), -- 1 là admin, 2 là nhân viên, 3 là admin
 	trangThai bit NOT NULL CHECK (trangThai IN (0,1)), --  Trạng thái xóa
 	cauHoiBaoMat nvarchar (100) NOT NULL,
-	cauTraLoiBaoMat nvarchar (128) NOT NULL,
+	cauTraLoiBaoMat nvarchar (128) NOT NULL
+	thongBao bit NOT NULL CHECK (thongBao IN(0,1)),
 )
 
 CREATE TABLE NHANVIEN(
