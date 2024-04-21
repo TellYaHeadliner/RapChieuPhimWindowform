@@ -1,0 +1,12 @@
+D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\Model.dll.config
+D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\Model.dll
+D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\Model.pdb
+D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.dll
+D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.xml
+D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.csproj.Up2Date
+D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.dll
+D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.pdb

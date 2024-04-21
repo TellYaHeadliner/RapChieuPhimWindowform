@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CINEMA_2ModelStoreContainer" CdmEntityContainer="CINEMA_2Entities">
+    <EntitySetMapping Name="DICHVUs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.DICHVU">
+        <MappingFragment StoreEntitySet="DICHVU">
+          <ScalarProperty Name="maDichVu" ColumnName="maDichVu" />
+          <ScalarProperty Name="tenDichVu" ColumnName="tenDichVu" />
+          <ScalarProperty Name="giaDichVu" ColumnName="giaDichVu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DICHVUTHEOHOADONs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.DICHVUTHEOHOADON">
+        <MappingFragment StoreEntitySet="DICHVUTHEOHOADON">
+          <ScalarProperty Name="maHoaDon" ColumnName="maHoaDon" />
+          <ScalarProperty Name="maDichVu" ColumnName="maDichVu" />
+          <ScalarProperty Name="soLuong" ColumnName="soLuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIAMGIAs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.GIAMGIA">
+        <MappingFragment StoreEntitySet="GIAMGIA">
+          <ScalarProperty Name="maGiamGia" ColumnName="maGiamGia" />
+          <ScalarProperty Name="phanTramGiamGia" ColumnName="phanTramGiamGia" />
+          <ScalarProperty Name="hanSuDung" ColumnName="hanSuDung" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIAODICHes">
+      <EntityTypeMapping TypeName="CINEMA_2Model.GIAODICH">
+        <MappingFragment StoreEntitySet="GIAODICH">
+          <ScalarProperty Name="maGiaoDich" ColumnName="maGiaoDich" />
+          <ScalarProperty Name="maHoaDon" ColumnName="maHoaDon" />
+          <ScalarProperty Name="soTKNganHang" ColumnName="soTKNganHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.HOADON">
+        <MappingFragment StoreEntitySet="HOADON">
+          <ScalarProperty Name="maHoaDon" ColumnName="maHoaDon" />
+          <ScalarProperty Name="tongGiaHoaDon" ColumnName="tongGiaHoaDon" />
+          <ScalarProperty Name="ghiChu" ColumnName="ghiChu" />
+          <ScalarProperty Name="soDienThoai" ColumnName="soDienThoai" />
+          <ScalarProperty Name="maGiamGia" ColumnName="maGiamGia" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="maNhanVien" ColumnName="maNhanVien" />
+          <ScalarProperty Name="kiemDuyet" ColumnName="kiemDuyet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHIMs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.PHIM">
+        <MappingFragment StoreEntitySet="PHIM">
+          <ScalarProperty Name="maPhim" ColumnName="maPhim" />
+          <ScalarProperty Name="tenPhim" ColumnName="tenPhim" />
+          <ScalarProperty Name="ngayPhatHanh" ColumnName="ngayPhatHanh" />
+          <ScalarProperty Name="moTa" ColumnName="moTa" />
+          <ScalarProperty Name="anhBia" ColumnName="anhBia" />
+          <ScalarProperty Name="maTheLoai" ColumnName="maTheLoai" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHONGCHIEUx">
+      <EntityTypeMapping TypeName="CINEMA_2Model.PHONGCHIEU">
+        <MappingFragment StoreEntitySet="PHONGCHIEU">
+          <ScalarProperty Name="maPhong" ColumnName="maPhong" />
+          <ScalarProperty Name="maRap" ColumnName="maRap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RAPPHIMs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.RAPPHIM">
+        <MappingFragment StoreEntitySet="RAPPHIM">
+          <ScalarProperty Name="maRap" ColumnName="maRap" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+          <ScalarProperty Name="gioMoCua" ColumnName="gioMoCua" />
+          <ScalarProperty Name="gioDongCua" ColumnName="gioDongCua" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAIKHOANs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.TAIKHOAN">
+        <MappingFragment StoreEntitySet="TAIKHOAN">
+          <ScalarProperty Name="soDienThoai" ColumnName="soDienThoai" />
+          <ScalarProperty Name="matKhau" ColumnName="matKhau" />
+          <ScalarProperty Name="tenNguoiDung" ColumnName="tenNguoiDung" />
+          <ScalarProperty Name="vaiTro" ColumnName="vaiTro" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+          <ScalarProperty Name="cauHoiBaoMat" ColumnName="cauHoiBaoMat" />
+          <ScalarProperty Name="cauTraLoiBaoMat" ColumnName="cauTraLoiBaoMat" />
+          <ScalarProperty Name="thongBao" ColumnName="thongBao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THELOAIPHIMs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.THELOAIPHIM">
+        <MappingFragment StoreEntitySet="THELOAIPHIM">
+          <ScalarProperty Name="maTheLoai" ColumnName="maTheLoai" />
+          <ScalarProperty Name="theLoaiPhim1" ColumnName="theLoaiPhim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THONGBAOs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.THONGBAO">
+        <MappingFragment StoreEntitySet="THONGBAO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="thongTin" ColumnName="thongTin" />
+          <ScalarProperty Name="ngayDang" ColumnName="ngayDang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TINTUCs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.TINTUC">
+        <MappingFragment StoreEntitySet="TINTUC">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tieuDe" ColumnName="tieuDe" />
+          <ScalarProperty Name="noiDung" ColumnName="noiDung" />
+          <ScalarProperty Name="ngayTao" ColumnName="ngayTao" />
+          <ScalarProperty Name="maNhanVien" ColumnName="maNhanVien" />
+          <ScalarProperty Name="anhTieuDe" ColumnName="anhTieuDe" />
+          <ScalarProperty Name="anhNoiDung" ColumnName="anhNoiDung" />
+          <ScalarProperty Name="luotXem" ColumnName="luotXem" />
+          <ScalarProperty Name="daDuyet" ColumnName="daDuyet" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VEs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.VE">
+        <MappingFragment StoreEntitySet="VE">
+          <ScalarProperty Name="maVe" ColumnName="maVe" />
+          <ScalarProperty Name="maGhe" ColumnName="maGhe" />
+          <ScalarProperty Name="maXuatChieu" ColumnName="maXuatChieu" />
+          <ScalarProperty Name="maHoaDon" ColumnName="maHoaDon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VITRIGHEs">
+      <EntityTypeMapping TypeName="CINEMA_2Model.VITRIGHE">
+        <MappingFragment StoreEntitySet="VITRIGHE">
+          <ScalarProperty Name="maGhe" ColumnName="maGhe" />
+          <ScalarProperty Name="maPhong" ColumnName="maPhong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XUATCHIEUx">
+      <EntityTypeMapping TypeName="CINEMA_2Model.XUATCHIEU">
+        <MappingFragment StoreEntitySet="XUATCHIEU">
+          <ScalarProperty Name="maXuatChieu" ColumnName="maXuatChieu" />
+          <ScalarProperty Name="maPhim" ColumnName="maPhim" />
+          <ScalarProperty Name="maPhong" ColumnName="maPhong" />
+          <ScalarProperty Name="ngayChieu" ColumnName="ngayChieu" />
+          <ScalarProperty Name="gioChieu" ColumnName="gioChieu" />
+          <ScalarProperty Name="giaXuatChieu" ColumnName="giaXuatChieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
