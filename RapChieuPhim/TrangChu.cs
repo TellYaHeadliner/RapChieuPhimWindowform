@@ -46,7 +46,7 @@ namespace RapChieuPhim
                         nhanThongBao();
                     }
                 //Đặt thời gian chờ 1 phút
-                Thread.Sleep(10000);
+                Thread.Sleep(60000);
             }
         }
 

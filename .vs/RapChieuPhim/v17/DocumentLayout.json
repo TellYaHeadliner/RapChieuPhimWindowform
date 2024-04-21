@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|D:\\Study\\IT\\LT Windown\\RapChieuPhim\\rapchieuphim\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|D:\\Study\\IT\\LT Windown\\RapChieuPhim\\rapchieuphim\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9373CE-FC6F-48B1-AB0E-2314174BCD2E}|Model\\Model.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{FA9373CE-FC6F-48B1-AB0E-2314174BCD2E}|Model\\Model.csproj|solutionrelative:model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +34,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Model.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\Model\\Model.edmx",
+              "RelativeDocumentMoniker": "Model\\Model.edmx",
+              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\Model\\Model.edmx [Diagram1]",
+              "RelativeToolTip": "Model\\Model.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-04-21T08:57:33.397Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TrangChu.cs",
               "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu.cs",
               "RelativeDocumentMoniker": "RapChieuPhim\\TrangChu.cs",
               "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu.cs",
               "RelativeToolTip": "RapChieuPhim\\TrangChu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDAAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T08:44:38.896Z",
               "EditorCaption": ""
