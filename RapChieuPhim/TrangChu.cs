@@ -16,7 +16,6 @@ namespace RapChieuPhim
 {
     public partial class TrangChu : Form
     {
-        //listThongBao bề ngang được 49 ký tự
         private string sdt;
         private bool nhapSearch = false;
         public TrangChu(string sdt = "0886627561")
@@ -47,7 +46,7 @@ namespace RapChieuPhim
                         nhanThongBao();
                     }
                 //Đặt thời gian chờ 1 phút
-                Thread.Sleep(10000);
+                Thread.Sleep(60000);
             }
         }
 
