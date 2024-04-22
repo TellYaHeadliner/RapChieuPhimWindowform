@@ -3,7 +3,6 @@ D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.exe
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.pdb
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.AssemblyReference.cache
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.Properties.Resources.resources
-D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.TrangChu.resources
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.GenerateResource.cache
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.CoreCompileInputs.cache
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.exe
@@ -20,3 +19,5 @@ D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.xml
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieu.FBFCA39F.Up2Date
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.dll
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.TrangChu_Client.resources
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.DatVe.resources

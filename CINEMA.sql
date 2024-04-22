@@ -35,7 +35,6 @@ CREATE TABLE HOADON(
 	maGiamGia char (15) NULL,
 	trangThai BIT CHECK (trangThai IN (0,1))
 )
-
 CREATE TABLE PHIM(
 	maPhim char (7) NOT NULL PRIMARY KEY,
 	tenPhim nvarchar (50) NOT NULL,
@@ -43,7 +42,8 @@ CREATE TABLE PHIM(
 	moTa nvarchar (1000) NULL,
 	anhBia char (100),
 	maTheLoai char (3) NOT NULL,
-	trangThai BIT CHECK (trangThai IN (0,1))
+	trangThai BIT CHECK (trangThai IN (0,1)),
+	luotXem int default 0
 )
 
 CREATE TABLE PHONGCHIEU(
@@ -241,5 +241,23 @@ insert into THONGBAO (thongTin) values
 					 (N'Thông báo về các sự cố kỹ thuật: "Xin lỗi về sự cố kỹ thuật gần đây. Chúng tôi đang làm việc chăm chỉ để khắc phục và đảm bảo rằng mọi thứ đều hoạt động suôn sẻ."'),
 					 (N'Thông báo về sự kiện đặc biệt: "Chúng tôi sắp tổ chức một sự kiện đặc biệt dành cho các fan hâm mộ của series phim nổi tiếng. Đừng bỏ lỡ cơ hội gặp gỡ các diễn viên và nhận những phần quà độc đáo!"')
 UPDATE TAIKHOAN SET thongBao = 1
+--Thêm thể loại phim
+insert into THELOAIPHIM values 
+			('KD',N'Kinh dị'),
+			('HD',N'Hành động'),
+			('TC',N'Tình cảm'),
+			('TT',N'Trinh thám')
+--Thêm phim
+insert into PHIM (maPhim,tenPhim,ngayPhatHanh,moTa,anhBia,maTheLoai,trangThai,luotXem) values
+			     ('P01',N'Phim1 thứ nhất',CONVERT(date,'12/4/2024',103),N'Một "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','KD',1,8),
+			     ('P02',N'Phim2 thứ hai',CONVERT(date,'11/4/2024',103),N'Hai "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','HD',1,10),
+			     ('P03',N'Phim1 thứ ba',CONVERT(date,'10/4/2024',103),N'Ba "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','TC',1,12),
+			     ('P04',N'Phim2 thứ bốn',CONVERT(date,'9/4/2024',103),N'Bốn "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','TT',1,1),
+			     ('P05',N'Phim1 thứ năm',CONVERT(date,'8/4/2024',103),N'Năm "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','KD',1,76),
+			     ('P06',N'Phim2 thứ sáu',CONVERT(date,'7/4/2024',103),N'Sáu "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','HD',1,15),
+			     ('P07',N'Phim1 thứ bảy',CONVERT(date,'6/4/2024',103),N'Bảy "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','TT',1,9)
+
 end;
 select * from TAIKHOAN
+select * from PHIM
+select * from THELOAIPHIM

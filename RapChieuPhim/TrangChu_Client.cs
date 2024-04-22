@@ -14,11 +14,11 @@ using BusinessLayer;
 
 namespace RapChieuPhim
 {
-    public partial class TrangChu : Form
+    public partial class TrangChu_Client : Form
     {
         private string sdt;
         private bool nhapSearch = false;
-        public TrangChu(string sdt = "0886627561")
+        public TrangChu_Client(string sdt = "0886627561")
         {
             this.sdt = sdt;
             InitializeComponent();
@@ -251,5 +251,12 @@ namespace RapChieuPhim
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DatVe dv = new DatVe(sdt);
+            dv.ShowDialog();
+            this.Show();
+        }
     }
 }
