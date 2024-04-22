@@ -20,6 +20,11 @@ namespace BusinessLayer
                 return DMTinTuc.run().selectByDuyetTrangThai((daDuyet == true ? true : false),trangThai);
             else
                 return DMTinTuc.run().selectAll();
-        } 
+        }
+        //Lấy tin tức theo ID
+        public static TINTUC selectByID(TINTUC tinTuc)
+        {
+            return DMTinTuc.run().selectByID(tinTuc);
+        }
     }
 }

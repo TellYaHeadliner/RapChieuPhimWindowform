@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Phim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="ThongBao.cs" />
@@ -59,7 +60,7 @@
       <Name>Datalayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{fa9373ce-fc6f-48b1-ab0e-2314174bcd2e}</Project>
+      <Project>{51e89571-274e-4be1-a43a-37acdff1d6dd}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>

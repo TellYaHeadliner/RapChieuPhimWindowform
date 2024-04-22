@@ -35,7 +35,6 @@ CREATE TABLE HOADON(
 	maGiamGia char (15) NULL,
 	trangThai BIT CHECK (trangThai IN (0,1))
 )
-
 CREATE TABLE PHIM(
 	maPhim char (7) NOT NULL PRIMARY KEY,
 	tenPhim nvarchar (50) NOT NULL,
@@ -43,7 +42,8 @@ CREATE TABLE PHIM(
 	moTa nvarchar (1000) NULL,
 	anhBia char (100),
 	maTheLoai char (3) NOT NULL,
-	trangThai BIT CHECK (trangThai IN (0,1))
+	trangThai BIT CHECK (trangThai IN (0,1)),
+	luotXem int default 0
 )
 
 CREATE TABLE PHONGCHIEU(
@@ -72,13 +72,13 @@ CREATE TABLE TAIKHOAN(
 
 CREATE TABLE NHANVIEN(
 	maNhanVien char (10) PRIMARY KEY NOT NULL,
-	kiemDuyet int CHECK (kiemDuyet IN (0,1,2)) -- 0 là khóa, 1 là kiểm duyệt, 2 không cần kiểm duyệt
+	kiemDuyet bit NOT NULL CHECK (kiemDuyet IN (0,1)) -- 0 là cần kiểm duyệt, 1 không cần kiểm duyệt
 )
 
 CREATE TABLE TINTUC(
 	id int IDENTITY PRIMARY KEY,
-	tieuDe nvarchar (100),
-	noiDung nvarchar (1000),
+	tieuDe nvarchar (500),
+	noiDung nvarchar (5000),
 	ngayTao datetime default getdate(),
 	maNhanVien char (10),
 	anhTieuDe char (100),
@@ -231,7 +231,17 @@ insert into TINTUC (anhTieuDe,tieuDe,noiDung,maNhanVien,luotXem,daDuyet,trangTha
 				   (N'ThuTuong.png',N'Tổng Bí thư Nguyễn Phú Trọng chúc mừng năm mới Lào và Campuchia',N'Trong thư chúc mừng gửi Tổng Bí thư, Chủ tịch nước Lào Thongloun Sisoulith, có đoạn viết: "Nhân dịp tết cổ truyền của Lào (Bunpimay), thay mặt Đảng, Nhà nước, nhân dân Việt Nam, tôi thân ái gửi tới đồng chí và các đồng chí lãnh đạo Đảng, Nhà nước và nhân dân Lào những tình cảm đồng chí, anh em thân thiết và những lời chúc mừng tốt đẹp nhất.','0886627561',0,1,1),
 				   (N'ThuTuong.png',N'TP.HCM làm gì để ngăn nhân viên y tế nghỉ việc?',N'TS-BS Phan Thu Hằng, Phó giám đốc Bệnh viện Hùng Vương cho biết sau khi đại dịch Covid-19 đi qua, bệnh viện đã thực hiện khảo sát mức độ trầm cảm, lo âu, stress với 1.300 nhân viên y tế. Trong đó, có 42,2% nhân viên gặp vấn đề về lo âu, 24,3% nhân viên trầm cảm và có 16,5% nhân viên gặp stress.','0886627561',0,1,1),
 				   (N'ThuTuong.png',N'Bình Phước: Hơn 100 cảnh sát truy bắt nghi phạm liên quan vụ án ma túy',N'Lực lượng chức năng đã bắt giữ một nghi phạm và thu giữ các vật chứng có liên quan để điều tra. Riêng Lê Minh Công là người có liên quan đến vụ việc, lợi dụng khu vực hiện trường có địa hình cây cối rậm rạp đã lẩn trốn.','0886627561',0,1,1),
-				   (N'ThuTuong.png',N'Diễn viên phim "Tiếng sét trong mưa" đột ngột qua đời',N'Trao đổi với Thanh Niên, đạo diễn Ngụy Minh Khang cho biết sáng 5.4, anh có buổi hẹn gặp mặt diễn viên Lê Hữu Thủy để chuẩn bị cho dự án mới. Tuy nhiên, khi mọi người có mặt đông đủ thì nam diễn viên vẫn chưa xuất hiện. "Tôi tưởng anh Thủy ngủ quên nên gọi điện liên tục nhưng không nghe máy. Lát sau thì cháu của anh Lê Hữu Thủy chạy đến báo tin là anh Thủy đã qua đời. Tôi nghe mà bàng hoàng, không tin đây là sự thật bởi trước giờ anh Thủy rất khỏe. Tôi gọi trực tiếp cho con gái anh Hữu Thủy thì xác nhận ba mất lúc sáng. Vì con gái anh Thủy khóc nhiều nên tôi cũng không dám hỏi thêm. Giờ gia đình vẫn đang chuẩn bị tang lễ, ê kíp chúng tôi cũng đang ngồi đợi đến 15 giờ rồi sang nhà", Ngụy Minh Khang chia sẻ.','0886627561',0,1,1)
+				   (N'ThuTuong.png',N'Diễn viên phim "Tiếng sét trong mưa" đột ngột qua đời',N'Trao đổi với Thanh Niên, đạo diễn Ngụy Minh Khang cho biết sáng 5.4, anh có buổi hẹn gặp mặt diễn viên Lê Hữu Thủy để chuẩn bị cho dự án mới. Tuy nhiên, khi mọi người có mặt đông đủ thì nam diễn viên vẫn chưa xuất hiện. "Tôi tưởng anh Thủy ngủ quên nên gọi điện liên tục nhưng không nghe máy. Lát sau thì cháu của anh Lê Hữu Thủy chạy đến báo tin là anh Thủy đã qua đời. Tôi nghe mà bàng hoàng, không tin đây là sự thật bởi trước giờ anh Thủy rất khỏe. Tôi gọi trực tiếp cho con gái anh Hữu Thủy thì xác nhận ba mất lúc sáng. Vì con gái anh Thủy khóc nhiều nên tôi cũng không dám hỏi thêm. Giờ gia đình vẫn đang chuẩn bị tang lễ, ê kíp chúng tôi cũng đang ngồi đợi đến 15 giờ rồi sang nhà", Ngụy Minh Khang chia sẻ.','0886627561',0,1,1),			   
+				   (N'ThuTuong.png',N'Ngôi nhà cổ bên bờ sông',N'Trong một góc nhỏ của thị trấn, có một ngôi nhà cổ bên bờ sông. Ngôi nhà đã tồn tại từ rất lâu, chứng kiến ​​biết bao nhiêu thăng trầm của cuộc sống xung quanh. Nó được xây dựng từ những viên gạch cũ kỹ, những mảnh gỗ đã qua thời gian. Từ xa, ngôi nhà trông như một bức tranh tĩnh lặng, đẹp đẽ giữa bức tranh tự nhiên của cánh đồng và dòng sông êm đềm.
+
+Bên trong, không gian của ngôi nhà phản ánh sự ấm áp và yên bình. Những tia nắng mặt trời chiếu qua cửa sổ lớn làm lung linh những hạt bụi bay. Bầu không khí trong lành và hương thơm của hoa cỏ lấp đầy không gian, tạo nên một cảm giác bình yên và thư thái.
+
+Phía sau ngôi nhà là một khu vườn nhỏ, nơi mà những bông hoa đa dạng màu sắc nở rộ, tạo nên một màu sắc rực rỡ giữa môi trường xanh mát. Cây cỏ xung quanh được chăm sóc cẩn thận, tạo ra một khung cảnh thơ mộng và tươi mới.
+
+Mỗi buổi sáng, khi bình minh vừa lên, người dân thị trấn thường nhìn thấy ánh sáng màu vàng óng ả từ ngôi nhà cổ.','0886627561',0,1,1)
+
+update TINTUC set anhNoiDung = anhTieuDe
+
 --Insert và Update thông báo
 insert into THONGBAO (thongTin) values
 					 (N'Thông báo về các suất chiếu mới: "Chúng tôi vừa thêm các suất chiếu mới vào hệ thống. Hãy kiểm tra và cập nhật lịch trình của bạn!"'),
@@ -241,5 +251,24 @@ insert into THONGBAO (thongTin) values
 					 (N'Thông báo về các sự cố kỹ thuật: "Xin lỗi về sự cố kỹ thuật gần đây. Chúng tôi đang làm việc chăm chỉ để khắc phục và đảm bảo rằng mọi thứ đều hoạt động suôn sẻ."'),
 					 (N'Thông báo về sự kiện đặc biệt: "Chúng tôi sắp tổ chức một sự kiện đặc biệt dành cho các fan hâm mộ của series phim nổi tiếng. Đừng bỏ lỡ cơ hội gặp gỡ các diễn viên và nhận những phần quà độc đáo!"')
 UPDATE TAIKHOAN SET thongBao = 1
+--Thêm thể loại phim
+insert into THELOAIPHIM values 
+			('KD',N'Kinh dị'),
+			('HD',N'Hành động'),
+			('TC',N'Tình cảm'),
+			('TT',N'Trinh thám')
+--Thêm phim
+insert into PHIM (maPhim,tenPhim,ngayPhatHanh,moTa,anhBia,maTheLoai,trangThai,luotXem) values
+			     ('P01',N'Phim1 thứ nhất',CONVERT(date,'12/4/2024',103),N'Một "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','KD',1,8),
+			     ('P02',N'Phim2 thứ hai',CONVERT(date,'11/4/2024',103),N'Hai "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','HD',1,10),
+			     ('P03',N'Phim1 thứ ba',CONVERT(date,'10/4/2024',103),N'Ba "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','TC',1,12),
+			     ('P04',N'Phim2 thứ bốn',CONVERT(date,'9/4/2024',103),N'Bốn "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','TT',1,1),
+			     ('P05',N'Phim1 thứ năm',CONVERT(date,'8/4/2024',103),N'Năm "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','KD',1,76),
+			     ('P06',N'Phim2 thứ sáu',CONVERT(date,'7/4/2024',103),N'Sáu "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','HD',1,15),
+			     ('P07',N'Phim1 thứ bảy',CONVERT(date,'6/4/2024',103),N'Bảy "Godzilla vs Kong" là một bộ phim hành động giả tưởng năm 2021, đưa hai kẻ thù lớn nhất trong vũ trụ điện ảnh "MonsterVerse" vào một cuộc đối đầu hồi hộp và đầy kịch tính. Sự xuất hiện của hai siêu quái vật, Godzilla và King Kong, khiến thế giới chìm trong lo lắng và sợ hãi. Bộ phim mang đến cho khán giả những trận chiến nghẹt thở giữa hai thế lực vô cùng mạnh mẽ, đồng thời khám phá những bí ẩn đằng sau nguồn gốc và sức mạnh của họ. Đồng thời, những khám phá mới mẻ và những tình huống khó lường đưa khán giả vào một cuộc phiêu lưu đầy bất ngờ và kích thích.','demoAnhPhim.jpg','TT',1,9)
+
 end;
 select * from TAIKHOAN
+select * from PHIM
+select * from THELOAIPHIM
+select * from TINTUC

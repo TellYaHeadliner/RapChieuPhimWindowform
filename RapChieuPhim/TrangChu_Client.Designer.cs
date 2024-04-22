@@ -2,7 +2,7 @@
 
 namespace RapChieuPhim
 {
-    partial class TrangChu
+    partial class TrangChu_Client
     {
         /// <summary>
         /// Required designer variable.
@@ -36,10 +36,12 @@ namespace RapChieuPhim
             this.settingTK = new System.Windows.Forms.Button();
             this.soDT = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.tinTuc = new System.Windows.Forms.Panel();
-            this.thongBao = new System.Windows.Forms.Button();
             this.listThongBao = new System.Windows.Forms.ListBox();
+            this.timRap = new System.Windows.Forms.Button();
+            this.veDaDat = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.thongBao = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnTuyChon = new System.Windows.Forms.Button();
             this.tblTuyChon.SuspendLayout();
@@ -111,15 +113,6 @@ namespace RapChieuPhim
             this.userName.TabIndex = 0;
             this.userName.Text = "User Name";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(410, 55);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(519, 43);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Hàng button này mọi người tùy chỉnh theo chức năng";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // tinTuc
             // 
             this.tinTuc.AutoScroll = true;
@@ -127,6 +120,47 @@ namespace RapChieuPhim
             this.tinTuc.Name = "tinTuc";
             this.tinTuc.Size = new System.Drawing.Size(967, 436);
             this.tinTuc.TabIndex = 6;
+            // 
+            // listThongBao
+            // 
+            this.listThongBao.FormattingEnabled = true;
+            this.listThongBao.Location = new System.Drawing.Point(644, 98);
+            this.listThongBao.Name = "listThongBao";
+            this.listThongBao.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listThongBao.Size = new System.Drawing.Size(332, 251);
+            this.listThongBao.TabIndex = 8;
+            this.listThongBao.Visible = false;
+            // 
+            // timRap
+            // 
+            this.timRap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timRap.Location = new System.Drawing.Point(664, 58);
+            this.timRap.Name = "timRap";
+            this.timRap.Size = new System.Drawing.Size(81, 38);
+            this.timRap.TabIndex = 13;
+            this.timRap.Text = "Tìm rạp";
+            this.timRap.UseVisualStyleBackColor = true;
+            // 
+            // veDaDat
+            // 
+            this.veDaDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.veDaDat.Location = new System.Drawing.Point(751, 58);
+            this.veDaDat.Name = "veDaDat";
+            this.veDaDat.Size = new System.Drawing.Size(96, 38);
+            this.veDaDat.TabIndex = 12;
+            this.veDaDat.Text = "Vé đã đặt";
+            this.veDaDat.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(853, 58);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(81, 38);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Đặt vé";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // thongBao
             // 
@@ -140,16 +174,6 @@ namespace RapChieuPhim
             this.thongBao.TabIndex = 7;
             this.thongBao.UseVisualStyleBackColor = false;
             this.thongBao.Click += new System.EventHandler(this.thongBao_Click);
-            // 
-            // listThongBao
-            // 
-            this.listThongBao.FormattingEnabled = true;
-            this.listThongBao.Location = new System.Drawing.Point(644, 98);
-            this.listThongBao.Name = "listThongBao";
-            this.listThongBao.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listThongBao.Size = new System.Drawing.Size(332, 251);
-            this.listThongBao.TabIndex = 8;
-            this.listThongBao.Visible = false;
             // 
             // btnSearch
             // 
@@ -176,20 +200,22 @@ namespace RapChieuPhim
             this.btnTuyChon.UseVisualStyleBackColor = false;
             this.btnTuyChon.Click += new System.EventHandler(this.btnTuyChon_Click);
             // 
-            // TrangChu
+            // TrangChu_Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 549);
+            this.Controls.Add(this.timRap);
+            this.Controls.Add(this.veDaDat);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.listThongBao);
             this.Controls.Add(this.thongBao);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.tblTuyChon);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.search);
             this.Controls.Add(this.btnTuyChon);
             this.Controls.Add(this.tinTuc);
-            this.Name = "TrangChu";
+            this.Name = "TrangChu_Client";
             this.Text = "TRANG CHỦ";
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.tblTuyChon.ResumeLayout(false);
@@ -207,12 +233,15 @@ namespace RapChieuPhim
         private System.Windows.Forms.Label userName;
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Button settingTK;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel tinTuc;
         private System.Windows.Forms.Button thongBao;
         private ListBox listThongBao;
 
         #endregion
+
+        private Button timRap;
+        private Button veDaDat;
+        private Button button3;
     }
 }
 
