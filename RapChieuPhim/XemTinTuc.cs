@@ -17,8 +17,10 @@ namespace RapChieuPhim
     public partial class XemTinTuc : Form
     {
         private TINTUC tinTuc;
-        public XemTinTuc(TINTUC tinTuc)
+        private bool xemTruoc;
+        public XemTinTuc(TINTUC tinTuc,bool xemTruoc = false)
         {
+            this.xemTruoc = xemTruoc;
             InitializeComponent();
             this.tinTuc = TinTuc.selectByID(tinTuc);
         }
@@ -33,7 +35,10 @@ namespace RapChieuPhim
             Label luotXem = new Label();
 
             tieuDe.Text = tinTuc.tieuDe;
-            hAnh.Image = Image.FromFile(".\\Pictures\\"+tinTuc.anhNoiDung);
+            if(!xemTruoc)
+                hAnh.Image = Image.FromFile(".\\Pictures\\"+tinTuc.anhNoiDung);
+            else
+                hAnh.Image = Image.FromFile(tinTuc.anhNoiDung);
             hAnh.SizeMode = PictureBoxSizeMode.Zoom;
             noiDung.Text = tinTuc.noiDung;
             tacGia.Text = "By: " + tinTuc.TAIKHOAN.tenNguoiDung;
