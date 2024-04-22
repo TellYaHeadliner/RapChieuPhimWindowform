@@ -1,3 +1,5 @@
+use master
+
 CREATE DATABASE CINEMA_2;
 USE CINEMA_2
 -- CREATE DATABASE
@@ -43,7 +45,8 @@ CREATE TABLE PHIM(
 	moTa nvarchar (1000) NULL,
 	anhBia char (100),
 	maTheLoai char (3) NOT NULL,
-	trangThai BIT CHECK (trangThai IN (0,1))
+	trangThai BIT CHECK (trangThai IN (0,1)),
+	luotXem int default 0
 )
 
 CREATE TABLE PHONGCHIEU(
@@ -72,13 +75,13 @@ CREATE TABLE TAIKHOAN(
 
 CREATE TABLE NHANVIEN(
 	maNhanVien char (10) PRIMARY KEY NOT NULL,
-	kiemDuyet int CHECK (kiemDuyet IN (0,1,2)) -- 0 là khóa, 1 là kiểm duyệt, 2 không cần kiểm duyệt
+	kiemDuyet bit not null CHECK (kiemDuyet IN (0,1)) -- 0 là can xac nhan, 1 là khong can duyet.
 )
 
 CREATE TABLE TINTUC(
 	id int IDENTITY PRIMARY KEY,
-	tieuDe nvarchar (100),
-	noiDung nvarchar (1000),
+	tieuDe nvarchar (500),
+	noiDung nvarchar (4000),
 	ngayTao datetime default getdate(),
 	maNhanVien char (10),
 	anhTieuDe char (100),
@@ -243,3 +246,12 @@ insert into THONGBAO (thongTin) values
 UPDATE TAIKHOAN SET thongBao = 1
 end;
 select * from TAIKHOAN
+--vy
+begin
+use CINEMA_2
+insert into TAIKHOAN values (N'0328761417', N'zyy123', N'zyy',2, 1, '','',1)
+
+insert into NHANVIEN values (N'0328761417', 1)
+
+select * from TINTUC
+end;

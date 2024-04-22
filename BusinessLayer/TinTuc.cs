@@ -20,6 +20,11 @@ namespace BusinessLayer
                 return DMTinTuc.run().selectByDuyetTrangThai((daDuyet == true ? true : false),trangThai);
             else
                 return DMTinTuc.run().selectAll();
-        } 
+        }
+        public static bool addTinTuc(string maNV, string tieuDe, string noiDung, string anhTieuDe, string anhNoiDung, bool daDuyet)
+        {
+            TINTUC tinTuc = new TINTUC() {luotXem=0, ngayTao=DateTime.Now, tieuDe = tieuDe, noiDung=noiDung, anhTieuDe=anhTieuDe, anhNoiDung=anhNoiDung, daDuyet=daDuyet,trangThai=true, maNhanVien=maNV};
+            return DMTinTuc.run().insert(tinTuc);
+        }
     }
 }

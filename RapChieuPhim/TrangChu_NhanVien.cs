@@ -14,11 +14,11 @@ using BusinessLayer;
 
 namespace RapChieuPhim
 {
-    public partial class TrangChu : Form
+    public partial class TrangChu_NhanVien : Form
     {
         private string sdt;
         private bool nhapSearch = false;
-        public TrangChu(string sdt = "0886627561")
+        public TrangChu_NhanVien(string sdt = "0328761417")
         {
             this.sdt = sdt;
             InitializeComponent();
@@ -251,5 +251,12 @@ namespace RapChieuPhim
 
         }
 
+        private void btnDangTin_Click(object sender, EventArgs e)
+        {
+            FrmDangTin DangTin= new FrmDangTin(TaiKhoan.selectByID(sdt).NHANVIEN);
+            this.Hide();
+            DangTin.ShowDialog();
+            this.Show();
+        }
     }
 }

@@ -1,12 +1,12 @@
-D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\Model.dll.config
-D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\Model.dll
-D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\Model.pdb
-D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.dll
-D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.SqlServer.dll
-D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.xml
-D:\Study\IT\LT Windown\RapChieuPhim\Model\bin\Debug\EntityFramework.SqlServer.xml
-D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.csproj.AssemblyReference.cache
-D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
-D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.csproj.Up2Date
-D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.dll
-D:\Study\IT\LT Windown\RapChieuPhim\Model\obj\Debug\Model.pdb
+D:\study\IT\C#\RapChieuPhim\Model\bin\Debug\Model.dll.config
+D:\study\IT\C#\RapChieuPhim\Model\bin\Debug\Model.dll
+D:\study\IT\C#\RapChieuPhim\Model\bin\Debug\Model.pdb
+D:\study\IT\C#\RapChieuPhim\Model\bin\Debug\EntityFramework.dll
+D:\study\IT\C#\RapChieuPhim\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\study\IT\C#\RapChieuPhim\Model\bin\Debug\EntityFramework.xml
+D:\study\IT\C#\RapChieuPhim\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\IT\C#\RapChieuPhim\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\study\IT\C#\RapChieuPhim\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\study\IT\C#\RapChieuPhim\Model\obj\Debug\Model.csproj.CopyComplete
+D:\study\IT\C#\RapChieuPhim\Model\obj\Debug\Model.dll
+D:\study\IT\C#\RapChieuPhim\Model\obj\Debug\Model.pdb

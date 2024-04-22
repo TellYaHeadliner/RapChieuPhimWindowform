@@ -53,14 +53,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TrangChu.cs">
+    <Compile Include="FrmDangTin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TrangChu.Designer.cs">
-      <DependentUpon>TrangChu.cs</DependentUpon>
+    <Compile Include="FrmDangTin.Designer.cs">
+      <DependentUpon>FrmDangTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemTruoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemTruoc.Designer.cs">
+      <DependentUpon>frmXemTruoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChu_NhanVien.Designer.cs">
+      <DependentUpon>TrangChu_NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDangTin.resx">
+      <DependentUpon>FrmDangTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemTruoc.resx">
+      <DependentUpon>frmXemTruoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -71,8 +89,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TrangChu.resx">
-      <DependentUpon>TrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="TrangChu_NhanVien.resx">
+      <DependentUpon>TrangChu_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -102,7 +120,7 @@
       <Name>BusinessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{fa9373ce-fc6f-48b1-ab0e-2314174bcd2e}</Project>
+      <Project>{9e8d5785-5d97-4fd4-938e-8fcc2569a13b}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>

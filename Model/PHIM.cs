@@ -27,6 +27,7 @@ namespace Model
         public string anhBia { get; set; }
         public string maTheLoai { get; set; }
         public Nullable<bool> trangThai { get; set; }
+        public Nullable<int> luotXem { get; set; }
     
         public virtual THELOAIPHIM THELOAIPHIM { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

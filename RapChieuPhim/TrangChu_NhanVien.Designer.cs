@@ -2,7 +2,7 @@
 
 namespace RapChieuPhim
 {
-    partial class TrangChu
+    partial class TrangChu_NhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -36,12 +36,13 @@ namespace RapChieuPhim
             this.settingTK = new System.Windows.Forms.Button();
             this.soDT = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.tinTuc = new System.Windows.Forms.Panel();
             this.thongBao = new System.Windows.Forms.Button();
             this.listThongBao = new System.Windows.Forms.ListBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnTuyChon = new System.Windows.Forms.Button();
+            this.btnTinDaDang = new System.Windows.Forms.Button();
+            this.btnDangTin = new System.Windows.Forms.Button();
             this.tblTuyChon.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,15 +112,6 @@ namespace RapChieuPhim
             this.userName.TabIndex = 0;
             this.userName.Text = "User Name";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(410, 55);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(519, 43);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Hàng button này mọi người tùy chỉnh theo chức năng";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // tinTuc
             // 
             this.tinTuc.AutoScroll = true;
@@ -176,20 +168,43 @@ namespace RapChieuPhim
             this.btnTuyChon.UseVisualStyleBackColor = false;
             this.btnTuyChon.Click += new System.EventHandler(this.btnTuyChon_Click);
             // 
-            // TrangChu
+            // btnTinDaDang
+            // 
+            this.btnTinDaDang.BackColor = System.Drawing.Color.White;
+            this.btnTinDaDang.Location = new System.Drawing.Point(644, 55);
+            this.btnTinDaDang.Name = "btnTinDaDang";
+            this.btnTinDaDang.Size = new System.Drawing.Size(115, 37);
+            this.btnTinDaDang.TabIndex = 9;
+            this.btnTinDaDang.Text = "Tin đã đăng";
+            this.btnTinDaDang.UseVisualStyleBackColor = false;
+            // 
+            // btnDangTin
+            // 
+            this.btnDangTin.Location = new System.Drawing.Point(765, 55);
+            this.btnDangTin.Name = "btnDangTin";
+            this.btnDangTin.Size = new System.Drawing.Size(115, 37);
+            this.btnDangTin.TabIndex = 10;
+            this.btnDangTin.Text = "Đăng tin";
+            this.btnDangTin.UseVisualStyleBackColor = true;
+            this.btnDangTin.Click += new System.EventHandler(this.btnDangTin_Click);
+            // 
+            // TrangChu_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(991, 549);
+            this.Controls.Add(this.btnDangTin);
+            this.Controls.Add(this.btnTinDaDang);
             this.Controls.Add(this.listThongBao);
             this.Controls.Add(this.thongBao);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.tblTuyChon);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.search);
             this.Controls.Add(this.btnTuyChon);
             this.Controls.Add(this.tinTuc);
-            this.Name = "TrangChu";
+            this.Name = "TrangChu_NhanVien";
             this.Text = "TRANG CHỦ";
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.tblTuyChon.ResumeLayout(false);
@@ -207,12 +222,14 @@ namespace RapChieuPhim
         private System.Windows.Forms.Label userName;
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Button settingTK;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel tinTuc;
         private System.Windows.Forms.Button thongBao;
         private ListBox listThongBao;
 
         #endregion
+
+        private Button btnTinDaDang;
+        private Button btnDangTin;
     }
 }
 

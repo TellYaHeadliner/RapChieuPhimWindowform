@@ -14,3 +14,19 @@ D:\Study\IT\LT Windown\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\Study\IT\LT Windown\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.pdb
 D:\Study\IT\LT Windown\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
 D:\Study\IT\LT Windown\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Datalayer.dll
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.dll
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Model.dll
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Datalayer.pdb
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Model.pdb
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Model.dll.config
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.xml
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\study\IT\C#\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.pdb

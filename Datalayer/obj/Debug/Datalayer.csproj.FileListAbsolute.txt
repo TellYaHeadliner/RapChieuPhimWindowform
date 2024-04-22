@@ -11,3 +11,16 @@ D:\Study\IT\LT Windown\RapChieuPhim\Datalayer\obj\Debug\Datalayer.dll
 D:\Study\IT\LT Windown\RapChieuPhim\Datalayer\obj\Debug\Datalayer.pdb
 D:\Study\IT\LT Windown\RapChieuPhim\Datalayer\bin\Debug\EntityFramework.SqlServer.dll
 D:\Study\IT\LT Windown\RapChieuPhim\Datalayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\Datalayer.dll
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\Datalayer.pdb
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\Model.dll
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\Model.pdb
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\Model.dll.config
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\EntityFramework.xml
+D:\study\IT\C#\RapChieuPhim\Datalayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\IT\C#\RapChieuPhim\Datalayer\obj\Debug\Datalayer.csproj.AssemblyReference.cache
+D:\study\IT\C#\RapChieuPhim\Datalayer\obj\Debug\Datalayer.csproj.CoreCompileInputs.cache
+D:\study\IT\C#\RapChieuPhim\Datalayer\obj\Debug\Datalayer.csproj.CopyComplete
+D:\study\IT\C#\RapChieuPhim\Datalayer\obj\Debug\Datalayer.dll
+D:\study\IT\C#\RapChieuPhim\Datalayer\obj\Debug\Datalayer.pdb

@@ -68,6 +68,7 @@
           <ScalarProperty Name="anhBia" ColumnName="anhBia" />
           <ScalarProperty Name="maTheLoai" ColumnName="maTheLoai" />
           <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+          <ScalarProperty Name="luotXem" ColumnName="luotXem" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

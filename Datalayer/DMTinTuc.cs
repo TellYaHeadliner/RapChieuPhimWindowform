@@ -49,7 +49,13 @@ namespace Datalayer
         //Thêm đối tượng t vào table
         public bool insert(TINTUC t)
         {
-            throw new NotImplementedException();
+            try
+            {
+                db.TINTUCs.Add(t);
+                db.SaveChanges();
+                return true;
+            }catch(Exception e) { }
+            return false;
         }
         //Xóa đối tượng t khỏi table
         public bool delete(TINTUC t)

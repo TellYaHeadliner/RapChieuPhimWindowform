@@ -15,7 +15,7 @@ namespace Model
     public partial class NHANVIEN
     {
         public string maNhanVien { get; set; }
-        public Nullable<int> kiemDuyet { get; set; }
+        public bool kiemDuyet { get; set; }
     
         public virtual TAIKHOAN TAIKHOAN { get; set; }
     }
