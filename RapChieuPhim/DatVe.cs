@@ -62,25 +62,25 @@ namespace RapChieuPhim
                         theLoai.Size = new System.Drawing.Size(200, 20);
                         ngayDang.Size = new System.Drawing.Size(145, 20);
                         luotXem.Size = new System.Drawing.Size(200, 20);
-                        hAnh.Size = new System.Drawing.Size(189, 189);
+                        hAnh.Size = new System.Drawing.Size(180, 189);
 
                         tieuDe.Location = new System.Drawing.Point(180, 30);
                         noiDung.Location = new System.Drawing.Point(180, 60);
                         theLoai.Location = new System.Drawing.Point(180, 175);
                         ngayDang.Location = new System.Drawing.Point(790, 175);
                         luotXem.Location = new System.Drawing.Point(400, 175);
-                        hAnh.Location = new System.Drawing.Point(740, 20);
+                        hAnh.Location = new System.Drawing.Point(0, 8);
 
 
                         tieuDe.Font = new Font(tieuDe.Font.FontFamily, 16);
                         tieuDe.Font = new Font(tieuDe.Font, tieuDe.Font.Style | FontStyle.Bold);
                         noiDung.Font = new Font(noiDung.Font.FontFamily, 11);
                         noiDung.ForeColor = Color.Gray;
-                        theLoai.Font = new Font(noiDung.Font.FontFamily, 12);
+                        theLoai.Font = new Font(theLoai.Font.FontFamily, 12);
                         theLoai.ForeColor = Color.Gray;
-                        ngayDang.Font = new Font(noiDung.Font.FontFamily, 12);
+                        ngayDang.Font = new Font(ngayDang.Font.FontFamily, 12);
                         ngayDang.ForeColor = Color.Gray;
-                        luotXem.Font = new Font(noiDung.Font.FontFamily, 12);
+                        luotXem.Font = new Font(luotXem.Font.FontFamily, 12);
                         luotXem.ForeColor = Color.Gray;
 
                         tieuDe.Text = row.tenPhim;
@@ -90,16 +90,8 @@ namespace RapChieuPhim
                         theLoai.Text = "Thể loại: " + row.THELOAIPHIM.theLoaiPhim1;
                         ngayDang.Text = "Date: " + row.ngayPhatHanh.ToString("dd/MM/yyyy") + ".";
                         luotXem.Text = "Views: " + row.luotXem + ".";
-                        //Đặt size cho hình ảnh-> đặt lại size của picturebox -> căn chỉnh picture box nằm giữa theo chiều dọc
-                        try
-                        {
-                            Image img = Image.FromFile(".\\Pictures\\" + row.anhBia);
-                            Image imgReSize = reSizeImage(img, img.Width * hAnh.Height / img.Height, hAnh.Height);
-                            hAnh.Image = imgReSize;
-                            hAnh.Size = new Size(imgReSize.Width, imgReSize.Height);
-                            hAnh.Location = new System.Drawing.Point(90 - imgReSize.Width / 2, 8);
-                        }
-                        catch (Exception ex) { }
+                        hAnh.Image = Image.FromFile(".\\Pictures\\" + row.anhBia);
+                        hAnh.SizeMode = PictureBoxSizeMode.Zoom;
 
                         //Đưa id bài viết vào name
                         tieuDe.Name = "tD/" + row.maPhim;
@@ -128,16 +120,6 @@ namespace RapChieuPhim
             }
             catch (Exception e) { }
             conn.Close();
-        }
-        //Đặt lại size của hình ảnh
-        private Image reSizeImage(Image image, int width, int height)
-        {
-            Bitmap result = new Bitmap(width, height);
-            using (Graphics g = Graphics.FromImage(result))
-            {
-                g.DrawImage(image, 0, 0, width, height);
-            }
-            return result;
         }
         //Nhấn nút tìm kiếm
         private void btnSearch_Click(object sender, EventArgs e)

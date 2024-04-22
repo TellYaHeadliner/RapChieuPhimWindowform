@@ -556,8 +556,8 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="tieuDe" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="noiDung" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="tieuDe" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="noiDung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
           <Property Name="ngayTao" Type="DateTime" Precision="3" />
           <Property Name="maNhanVien" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
           <Property Name="anhTieuDe" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />

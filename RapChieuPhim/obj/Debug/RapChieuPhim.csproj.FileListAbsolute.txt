@@ -21,3 +21,4 @@ D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlSe
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.xml
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.TrangChu_Client.resources
 D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.DatVe.resources
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.XemTinTuc.resources

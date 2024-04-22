@@ -3,34 +3,32 @@
   "WorkspaceRootPath": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|D:\\Study\\IT\\LT Windown\\RapChieuPhim\\rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\xemtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\xemtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|D:\\Study\\IT\\LT Windown\\RapChieuPhim\\rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|D:\\Study\\IT\\LT Windown\\RapChieuPhim\\rapchieuphim\\xemtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\xemtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RapChieuPhim||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\trangchu_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|D:\\Study\\IT\\LT Windown\\RapChieuPhim\\rapchieuphim\\trangchu_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\trangchu_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{042C36E7-8620-4A85-A25B-7F8B43A2B292}|Datalayer\\Datalayer.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\datalayer\\dmphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{042C36E7-8620-4A85-A25B-7F8B43A2B292}|Datalayer\\Datalayer.csproj|solutionrelative:datalayer\\dmphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{042C36E7-8620-4A85-A25B-7F8B43A2B292}|Datalayer\\Datalayer.csproj|D:\\Study\\IT\\LT Windown\\RapChieuPhim\\datalayer\\dmtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{042C36E7-8620-4A85-A25B-7F8B43A2B292}|Datalayer\\Datalayer.csproj|solutionrelative:datalayer\\dmtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\datve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54ECBC0-A87E-4406-8E33-655C98961C3B}|BusinessLayer\\BusinessLayer.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\businesslayer\\phim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54ECBC0-A87E-4406-8E33-655C98961C3B}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\phim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\trangchu_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\trangchu_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|1e78f8db-6c07-4d61-a18f-7514010abd56"
+      "AbsoluteMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|d:\\study\\it\\lt windown\\rapchieuphim\\rapchieuphim\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{46AB4D6A-4DFC-42ED-B056-671F0FE4355B}|RapChieuPhim\\RapChieuPhim.csproj|solutionrelative:rapchieuphim\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,92 +50,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RapChieuPhim",
-              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\RapChieuPhim.csproj",
-              "RelativeDocumentMoniker": "RapChieuPhim\\RapChieuPhim.csproj",
-              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\RapChieuPhim.csproj",
-              "RelativeToolTip": "RapChieuPhim\\RapChieuPhim.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-22T08:24:50.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrangChu_Client.cs",
-              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu_Client.cs",
-              "RelativeDocumentMoniker": "RapChieuPhim\\TrangChu_Client.cs",
-              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu_Client.cs",
-              "RelativeToolTip": "RapChieuPhim\\TrangChu_Client.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAQwF8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T07:39:35.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Phim.cs",
-              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\BusinessLayer\\Phim.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Phim.cs",
-              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\BusinessLayer\\Phim.cs",
-              "RelativeToolTip": "BusinessLayer\\Phim.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T07:32:41.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DMPhim.cs",
-              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\Datalayer\\DMPhim.cs",
-              "RelativeDocumentMoniker": "Datalayer\\DMPhim.cs",
-              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\Datalayer\\DMPhim.cs",
-              "RelativeToolTip": "Datalayer\\DMPhim.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAqwB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T06:35:28.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DMTinTuc.cs",
-              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\Datalayer\\DMTinTuc.cs",
-              "RelativeDocumentMoniker": "Datalayer\\DMTinTuc.cs",
-              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\Datalayer\\DMTinTuc.cs",
-              "RelativeToolTip": "Datalayer\\DMTinTuc.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T06:51:06.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DatVe.cs",
-              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\DatVe.cs",
-              "RelativeDocumentMoniker": "RapChieuPhim\\DatVe.cs",
-              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\DatVe.cs",
-              "RelativeToolTip": "RapChieuPhim\\DatVe.cs",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAACEAAAANAAAA",
+              "Title": "XemTinTuc.cs",
+              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\XemTinTuc.cs",
+              "RelativeDocumentMoniker": "RapChieuPhim\\XemTinTuc.cs",
+              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\XemTinTuc.cs*",
+              "RelativeToolTip": "RapChieuPhim\\XemTinTuc.cs*",
+              "ViewState": "AQIAADIAAAAAAAAAAAAYwDwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T14:18:54.231Z",
+              "WhenOpened": "2024-04-22T08:47:16.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "XemTinTuc.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\XemTinTuc.cs",
+              "RelativeDocumentMoniker": "RapChieuPhim\\XemTinTuc.cs",
+              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\XemTinTuc.cs [Design]*",
+              "RelativeToolTip": "RapChieuPhim\\XemTinTuc.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T08:45:45.778Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatVe.cs",
+              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\DatVe.cs",
+              "RelativeDocumentMoniker": "RapChieuPhim\\DatVe.cs",
+              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\DatVe.cs",
+              "RelativeToolTip": "RapChieuPhim\\DatVe.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwE0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:07:28.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DatVe.cs [Design]",
               "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\DatVe.cs",
               "RelativeDocumentMoniker": "RapChieuPhim\\DatVe.cs",
               "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\DatVe.cs [Design]",
               "RelativeToolTip": "RapChieuPhim\\DatVe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T10:24:26.253Z",
+              "WhenOpened": "2024-04-22T11:33:36.49Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrangChu_Client.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu_Client.cs",
+              "RelativeDocumentMoniker": "RapChieuPhim\\TrangChu_Client.cs",
+              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu_Client.cs [Design]",
+              "RelativeToolTip": "RapChieuPhim\\TrangChu_Client.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:33:43.662Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrangChu_Client.cs",
+              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu_Client.cs",
+              "RelativeDocumentMoniker": "RapChieuPhim\\TrangChu_Client.cs",
+              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\TrangChu_Client.cs",
+              "RelativeToolTip": "RapChieuPhim\\TrangChu_Client.cs",
+              "ViewState": "AQIAANAAAAAAAAAAAAAgwNwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T08:53:52.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\App.config",
+              "RelativeDocumentMoniker": "RapChieuPhim\\App.config",
+              "ToolTip": "D:\\Study\\IT\\LT Windown\\RapChieuPhim\\RapChieuPhim\\App.config",
+              "RelativeToolTip": "RapChieuPhim\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-22T11:27:35.736Z",
+              "EditorCaption": ""
             }
           ]
         }

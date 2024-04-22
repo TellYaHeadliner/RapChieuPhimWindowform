@@ -120,25 +120,25 @@ namespace RapChieuPhim
                     tacGia.Size = new System.Drawing.Size(700, 20);
                     ngayDang.Size = new System.Drawing.Size(700, 20);
                     luotXem.Size = new System.Drawing.Size(700, 20);
-                    hAnh.Size = new System.Drawing.Size(170, 170);
+                    hAnh.Size = new System.Drawing.Size(200, 170);
 
                     tieuDe.Location = new System.Drawing.Point(20, 30);
                     noiDung.Location = new System.Drawing.Point(20, 85);
                     tacGia.Location = new System.Drawing.Point(20, 135);
                     ngayDang.Location = new System.Drawing.Point(20, 155);
                     luotXem.Location = new System.Drawing.Point(20, 175);
-                    hAnh.Location = new System.Drawing.Point(740, 20);
+                    hAnh.Location = new System.Drawing.Point(725, 17);
 
 
                     tieuDe.Font = new Font(tieuDe.Font.FontFamily, 16);
                     tieuDe.Font = new Font(tieuDe.Font, tieuDe.Font.Style | FontStyle.Bold);
                     noiDung.Font = new Font(noiDung.Font.FontFamily, 12);
                     noiDung.ForeColor = Color.Gray;
-                    tacGia.Font = new Font(noiDung.Font.FontFamily, 12);
+                    tacGia.Font = new Font(tacGia.Font.FontFamily, 12);
                     tacGia.ForeColor = Color.Gray;
-                    ngayDang.Font = new Font(noiDung.Font.FontFamily, 12);
+                    ngayDang.Font = new Font(ngayDang.Font.FontFamily, 12);
                     ngayDang.ForeColor = Color.Gray;
-                    luotXem.Font = new Font(noiDung.Font.FontFamily, 12);
+                    luotXem.Font = new Font(luotXem.Font.FontFamily, 12);
                     luotXem.ForeColor = Color.Gray;
 
                     tieuDe.Text = row.tieuDe;
@@ -147,17 +147,8 @@ namespace RapChieuPhim
                     tacGia.Text = "By: " + row.TAIKHOAN.tenNguoiDung;
                     ngayDang.Text = "Date: " + row.ngayTao.Value.ToString("MM/dd/yyyy") + ".";
                     luotXem.Text = "Views: " + row.luotXem.ToString().Trim() + ".";
-                    //Đặt size cho hình ảnh-> đặt lại size của picturebox -> căn chỉnh picture box nằm giữa theo chiều dọc
-                    try
-                    {
-                        Image img = Image.FromFile(".\\Pictures\\" + row.anhTieuDe);
-                        Image imgReSize = reSizeImage(img, hAnh.Width, img.Height * hAnh.Width / img.Width);
-                        hAnh.Image = imgReSize;
-                        hAnh.Size = new Size(imgReSize.Width, imgReSize.Height);
-                        hAnh.Location =
-                            new System.Drawing.Point(740, rgb.Height - (imgReSize.Height / 2 + imgReSize.Height));
-                    }
-                    catch (Exception ex) { }
+                    hAnh.Image = Image.FromFile(".\\Pictures\\" + row.anhTieuDe);
+                    hAnh.SizeMode = PictureBoxSizeMode.Zoom;
 
                     //Đưa id bài viết vào name
                     tieuDe.Name = "tD/" + row.id;
@@ -183,17 +174,6 @@ namespace RapChieuPhim
                     tinTuc.Controls.Add(rgb);
                 }
             }
-        }
-
-        //Đặt lại size của hình ảnh
-        private Image reSizeImage(Image image, int width, int height)
-        {
-            Bitmap result = new Bitmap(width, height);
-            using (Graphics g = Graphics.FromImage(result))
-            {
-                g.DrawImage(image, 0, 0, width, height);
-            }
-            return result;
         }
 
         //Nhấn nút tìm kiếm
@@ -236,7 +216,10 @@ namespace RapChieuPhim
             // Xử lý logic khi người dùng nhấp vào GroupBox ai làm phần này nhớ cộng lượt xem khi ấn vào
             //lưu ý id người ấn vào trùng với id người đăng sẽ không cộng lượt xem.
             //gợi ý sử dung id trong phương thức này select sdt from TINTUC xem sdt có trùng với biến private string sdt không
-            MessageBox.Show("ID tin tức " + id);
+            XemTinTuc xt = new XemTinTuc(new TINTUC() { id = int.Parse(id) });
+            this.Hide();
+            xt.ShowDialog();
+            this.Show();
         }
 
         //Nhấn vào nút tài khoản để chuyển trang cài đặt tài khoản

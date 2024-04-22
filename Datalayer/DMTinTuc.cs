@@ -44,7 +44,7 @@ namespace Datalayer
         //Lấy đối tượng theo id t.id
         public TINTUC selectByID(TINTUC t)
         {
-            throw new NotImplementedException();
+            return db.TINTUCs.Where(p => p.id == t.id).FirstOrDefault();
         }
         //Thêm đối tượng t vào table
         public bool insert(TINTUC t)
