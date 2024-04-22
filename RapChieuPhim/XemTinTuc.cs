@@ -22,7 +22,10 @@ namespace RapChieuPhim
         {
             this.xemTruoc = xemTruoc;
             InitializeComponent();
-            this.tinTuc = TinTuc.selectByID(tinTuc);
+            if(!xemTruoc)
+                this.tinTuc = TinTuc.selectByID(tinTuc);
+            else
+                this.tinTuc = tinTuc;
         }
 
         private void XemTInTuc_Load(object sender, EventArgs e)
