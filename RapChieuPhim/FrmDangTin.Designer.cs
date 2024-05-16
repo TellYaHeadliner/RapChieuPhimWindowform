@@ -59,20 +59,22 @@
             // txbDuongDanTD
             // 
             this.txbDuongDanTD.Enabled = false;
+            this.txbDuongDanTD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbDuongDanTD.Location = new System.Drawing.Point(12, 55);
             this.txbDuongDanTD.Name = "txbDuongDanTD";
             this.txbDuongDanTD.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbDuongDanTD.Size = new System.Drawing.Size(156, 20);
+            this.txbDuongDanTD.Size = new System.Drawing.Size(156, 26);
             this.txbDuongDanTD.TabIndex = 4;
             this.txbDuongDanTD.Text = "Path";
             // 
             // txbDuongDanND
             // 
             this.txbDuongDanND.Enabled = false;
+            this.txbDuongDanND.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbDuongDanND.Location = new System.Drawing.Point(12, 334);
             this.txbDuongDanND.Name = "txbDuongDanND";
             this.txbDuongDanND.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbDuongDanND.Size = new System.Drawing.Size(156, 20);
+            this.txbDuongDanND.Size = new System.Drawing.Size(156, 26);
             this.txbDuongDanND.TabIndex = 5;
             this.txbDuongDanND.Text = "Path";
             // 
@@ -123,11 +125,12 @@
             this.txbTieuDe.Multiline = true;
             this.txbTieuDe.Name = "txbTieuDe";
             this.txbTieuDe.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbTieuDe.Size = new System.Drawing.Size(673, 40);
+            this.txbTieuDe.Size = new System.Drawing.Size(692, 40);
             this.txbTieuDe.TabIndex = 10;
             // 
             // bntDang
             // 
+            this.bntDang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntDang.Location = new System.Drawing.Point(771, 492);
             this.bntDang.Name = "bntDang";
             this.bntDang.Size = new System.Drawing.Size(140, 30);
@@ -138,9 +141,10 @@
             // 
             // btnPathTitle
             // 
+            this.btnPathTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPathTitle.Location = new System.Drawing.Point(177, 55);
             this.btnPathTitle.Name = "btnPathTitle";
-            this.btnPathTitle.Size = new System.Drawing.Size(51, 30);
+            this.btnPathTitle.Size = new System.Drawing.Size(51, 26);
             this.btnPathTitle.TabIndex = 12;
             this.btnPathTitle.Text = "...";
             this.btnPathTitle.UseVisualStyleBackColor = true;
@@ -148,9 +152,10 @@
             // 
             // btnPathContent
             // 
+            this.btnPathContent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPathContent.Location = new System.Drawing.Point(174, 334);
             this.btnPathContent.Name = "btnPathContent";
-            this.btnPathContent.Size = new System.Drawing.Size(51, 30);
+            this.btnPathContent.Size = new System.Drawing.Size(51, 26);
             this.btnPathContent.TabIndex = 13;
             this.btnPathContent.Text = "...";
             this.btnPathContent.UseVisualStyleBackColor = true;
@@ -158,6 +163,7 @@
             // 
             // btnXemTruoc
             // 
+            this.btnXemTruoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemTruoc.Location = new System.Drawing.Point(583, 494);
             this.btnXemTruoc.Name = "btnXemTruoc";
             this.btnXemTruoc.Size = new System.Drawing.Size(124, 27);

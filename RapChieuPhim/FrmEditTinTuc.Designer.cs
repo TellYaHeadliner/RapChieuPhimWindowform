@@ -47,9 +47,10 @@
             // 
             // btnPathContent
             // 
+            this.btnPathContent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPathContent.Location = new System.Drawing.Point(172, 331);
             this.btnPathContent.Name = "btnPathContent";
-            this.btnPathContent.Size = new System.Drawing.Size(51, 30);
+            this.btnPathContent.Size = new System.Drawing.Size(51, 26);
             this.btnPathContent.TabIndex = 25;
             this.btnPathContent.Text = "...";
             this.btnPathContent.UseVisualStyleBackColor = true;
@@ -57,6 +58,7 @@
             // 
             // btnPathTitle
             // 
+            this.btnPathTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPathTitle.Location = new System.Drawing.Point(175, 52);
             this.btnPathTitle.Name = "btnPathTitle";
             this.btnPathTitle.Size = new System.Drawing.Size(51, 30);
@@ -118,20 +120,22 @@
             // txbDuongDanND
             // 
             this.txbDuongDanND.Enabled = false;
+            this.txbDuongDanND.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbDuongDanND.Location = new System.Drawing.Point(10, 331);
             this.txbDuongDanND.Name = "txbDuongDanND";
             this.txbDuongDanND.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbDuongDanND.Size = new System.Drawing.Size(156, 20);
+            this.txbDuongDanND.Size = new System.Drawing.Size(156, 26);
             this.txbDuongDanND.TabIndex = 18;
             this.txbDuongDanND.Text = "Path";
             // 
             // txbDuongDanTD
             // 
             this.txbDuongDanTD.Enabled = false;
+            this.txbDuongDanTD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbDuongDanTD.Location = new System.Drawing.Point(10, 52);
             this.txbDuongDanTD.Name = "txbDuongDanTD";
             this.txbDuongDanTD.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbDuongDanTD.Size = new System.Drawing.Size(156, 20);
+            this.txbDuongDanTD.Size = new System.Drawing.Size(156, 26);
             this.txbDuongDanTD.TabIndex = 17;
             this.txbDuongDanTD.Text = "Path";
             // 
@@ -147,9 +151,10 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(662, 494);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(115, 24);
+            this.btnEdit.Size = new System.Drawing.Size(115, 25);
             this.btnEdit.TabIndex = 26;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = true;

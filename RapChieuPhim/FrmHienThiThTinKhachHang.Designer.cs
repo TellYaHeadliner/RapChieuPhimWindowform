@@ -102,6 +102,7 @@
             // 
             // btnRename
             // 
+            this.btnRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRename.Location = new System.Drawing.Point(60, 220);
             this.btnRename.Name = "btnRename";
             this.btnRename.Size = new System.Drawing.Size(124, 46);
@@ -112,9 +113,10 @@
             // 
             // btnChangePass
             // 
+            this.btnChangePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePass.Location = new System.Drawing.Point(337, 220);
             this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(124, 46);
+            this.btnChangePass.Size = new System.Drawing.Size(179, 46);
             this.btnChangePass.TabIndex = 8;
             this.btnChangePass.Text = "Change PassWord";
             this.btnChangePass.UseVisualStyleBackColor = true;
@@ -122,9 +124,9 @@
             // 
             // changePass1
             // 
-            this.changePass1.Location = new System.Drawing.Point(60, 289);
+            this.changePass1.Location = new System.Drawing.Point(74, 289);
             this.changePass1.Name = "changePass1";
-            this.changePass1.Size = new System.Drawing.Size(456, 231);
+            this.changePass1.Size = new System.Drawing.Size(420, 231);
             this.changePass1.TabIndex = 9;
             this.changePass1.saveChange += new RapChieuPhim.ChangePass.SaveChange(this.reName_saveChange);
             // 

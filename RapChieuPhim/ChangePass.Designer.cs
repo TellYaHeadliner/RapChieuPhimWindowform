@@ -70,30 +70,34 @@
             // 
             // txbPassHienTai
             // 
+            this.txbPassHienTai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassHienTai.Location = new System.Drawing.Point(209, 22);
             this.txbPassHienTai.Name = "txbPassHienTai";
             this.txbPassHienTai.PasswordChar = '*';
-            this.txbPassHienTai.Size = new System.Drawing.Size(185, 20);
+            this.txbPassHienTai.Size = new System.Drawing.Size(185, 26);
             this.txbPassHienTai.TabIndex = 3;
             // 
             // txbPassMoi
             // 
+            this.txbPassMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassMoi.Location = new System.Drawing.Point(209, 61);
             this.txbPassMoi.Name = "txbPassMoi";
             this.txbPassMoi.PasswordChar = '*';
-            this.txbPassMoi.Size = new System.Drawing.Size(185, 20);
+            this.txbPassMoi.Size = new System.Drawing.Size(185, 26);
             this.txbPassMoi.TabIndex = 4;
             // 
             // txbNhapLaiPass
             // 
+            this.txbNhapLaiPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNhapLaiPass.Location = new System.Drawing.Point(209, 100);
             this.txbNhapLaiPass.Name = "txbNhapLaiPass";
             this.txbNhapLaiPass.PasswordChar = '*';
-            this.txbNhapLaiPass.Size = new System.Drawing.Size(185, 20);
+            this.txbNhapLaiPass.Size = new System.Drawing.Size(185, 26);
             this.txbNhapLaiPass.TabIndex = 5;
             // 
             // btnHuyPass
             // 
+            this.btnHuyPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyPass.Location = new System.Drawing.Point(209, 145);
             this.btnHuyPass.Name = "btnHuyPass";
             this.btnHuyPass.Size = new System.Drawing.Size(75, 31);
@@ -104,6 +108,7 @@
             // 
             // btnSavePass
             // 
+            this.btnSavePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSavePass.Location = new System.Drawing.Point(319, 145);
             this.btnSavePass.Name = "btnSavePass";
             this.btnSavePass.Size = new System.Drawing.Size(75, 31);

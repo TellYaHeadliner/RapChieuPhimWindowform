@@ -38,7 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 55);
+            this.label1.Location = new System.Drawing.Point(15, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 20);
             this.label1.TabIndex = 0;
@@ -46,16 +46,18 @@
             // 
             // txbRename
             // 
-            this.txbRename.Location = new System.Drawing.Point(147, 57);
+            this.txbRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbRename.Location = new System.Drawing.Point(138, 35);
             this.txbRename.Name = "txbRename";
-            this.txbRename.Size = new System.Drawing.Size(240, 20);
+            this.txbRename.Size = new System.Drawing.Size(240, 26);
             this.txbRename.TabIndex = 1;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(287, 102);
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(287, 80);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 19);
+            this.btnSave.Size = new System.Drawing.Size(100, 31);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -63,9 +65,10 @@
             // 
             // huy
             // 
-            this.huy.Location = new System.Drawing.Point(147, 102);
+            this.huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.huy.Location = new System.Drawing.Point(138, 80);
             this.huy.Name = "huy";
-            this.huy.Size = new System.Drawing.Size(100, 19);
+            this.huy.Size = new System.Drawing.Size(100, 32);
             this.huy.TabIndex = 3;
             this.huy.Text = "Cancel";
             this.huy.UseVisualStyleBackColor = true;
