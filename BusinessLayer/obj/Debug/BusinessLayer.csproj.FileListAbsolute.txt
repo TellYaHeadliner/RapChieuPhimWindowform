@@ -23,7 +23,6 @@ D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Model.dll
 D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Datalayer.pdb
 D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Model.pdb
 D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\Model.dll.config
-D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.xml
 D:\study\IT\C#\RapChieuPhim\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\study\IT\C#\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
 D:\study\IT\C#\RapChieuPhim\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache

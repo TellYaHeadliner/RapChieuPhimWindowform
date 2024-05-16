@@ -21,10 +21,24 @@ namespace BusinessLayer
             else
                 return DMTinTuc.run().selectAll();
         }
+        //Lấy tin tức theo ID
+        public static TINTUC selectByID(TINTUC tinTuc)
+        {
+            return DMTinTuc.run().selectByID(tinTuc);
+        }
         public static bool addTinTuc(string maNV, string tieuDe, string noiDung, string anhTieuDe, string anhNoiDung, bool daDuyet)
         {
             TINTUC tinTuc = new TINTUC() {luotXem=0, ngayTao=DateTime.Now, tieuDe = tieuDe, noiDung=noiDung, anhTieuDe=anhTieuDe, anhNoiDung=anhNoiDung, daDuyet=daDuyet,trangThai=true, maNhanVien=maNV};
             return DMTinTuc.run().insert(tinTuc);
+        }
+        public static List<TINTUC> tinDaDang (string maNV)
+        {
+            return DMTinTuc.run().selectUpdatedByNV(maNV);
+        }
+
+        public static bool editTinTuc(TINTUC t)
+        {
+            return DMTinTuc.run().update(t);
         }
     }
 }

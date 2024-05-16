@@ -31,7 +31,6 @@ D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Datalayer.dll
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\BusinessLayer.pdb
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Model.pdb
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Model.dll.config
-D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.xml
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.xml
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Datalayer.pdb
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.AssemblyReference.cache
@@ -44,4 +43,8 @@ D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.exe
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.pdb
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.FrmDangTin.resources
 D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.TrangChu_NhanVien.resources
-D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.frmXemTruoc.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.frmTinDaDang.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.FrmEditTinTuc.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.FrmHienThiThTinKhachHang.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.ReName.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.ChangePass.resources

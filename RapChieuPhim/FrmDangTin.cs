@@ -25,11 +25,17 @@ namespace RapChieuPhim
         private void btnPathTitle_Click(object sender, EventArgs e)
         {
             OpenFileDialog fileTillte = new OpenFileDialog();
-            if (fileTillte.ShowDialog()==DialogResult.OK)
+            fileTillte.Filter = "Image Files|*.bmp;*.jpg;*.jpeg;*.png;*.gif;*.tif;*.tiff";
+            fileTillte.Title = "Select an Image File";
+            try
             {
-                ptrTieuDe.Image=new Bitmap(fileTillte.FileName);
-                txbDuongDanTD.Text=fileTillte.FileName;
+                if (fileTillte.ShowDialog() == DialogResult.OK)
+                {
+                    ptrTieuDe.Image = new Bitmap(fileTillte.FileName);
+                    txbDuongDanTD.Text = fileTillte.FileName;
+                }
             }
+            catch (Exception err) { MessageBox.Show("Đinh dạng ảnh không đúng!", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error); };
         }
 
         private void btnPathContent_Click(object sender, EventArgs e)
@@ -57,7 +63,7 @@ namespace RapChieuPhim
             string fileNameND = inputND.Substring(lastIndexND + 1);
             if (txbTieuDe.Text.Trim() == "" || txbContent.Text.Trim() == ""|| ptrTieuDe.Image==null ||ptrNoiDung.Image==null)
             {
-                MessageBox.Show("Hình ảnh tiêu đề hoặc tiêu đề hoặc ảnh nội dung hoặc nội dung không được rỗng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hình ảnh tiêu đề hoặc tiêu đề, ảnh nội dung hoặc nội dung không được rỗng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             if (TinTuc.addTinTuc(nv.maNhanVien, txbTieuDe.Text, txbContent.Text, fileNameTD, fileNameND, nv.kiemDuyet))
@@ -74,12 +80,20 @@ namespace RapChieuPhim
 
         private void btnXemTruoc_Click(object sender, EventArgs e)
         {
-            TINTUC tintuc = new TINTUC() { tieuDe = txbTieuDe.Text, noiDung = txbContent.Text };
-            frmXemTruoc frmXemTruoc = new frmXemTruoc(tintuc);
-            this.Hide();
-            frmXemTruoc.ShowDialog();
-            this.Show();
-
+            if (txbTieuDe.Text.Trim() == "" || txbContent.Text.Trim() == "" || ptrTieuDe.Image == null || ptrNoiDung.Image == null)
+            {
+                MessageBox.Show("Hình ảnh tiêu đề hoặc tiêu đề, ảnh nội dung hoặc nội dung không được rỗng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                TINTUC tintuc = new TINTUC() { tieuDe = txbTieuDe.Text, noiDung = txbContent.Text, anhNoiDung = txbDuongDanND.Text, luotXem = 0, maNhanVien = nv.maNhanVien, ngayTao = DateTime.Now, TAIKHOAN = nv.TAIKHOAN };
+                XemTinTuc frmXemTruoc = new XemTinTuc(tintuc, true);
+                this.Hide();
+                frmXemTruoc.ShowDialog();
+                this.Show();
+            }
         }
+
+        
     }
 }

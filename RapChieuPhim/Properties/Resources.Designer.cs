@@ -83,6 +83,36 @@ namespace RapChieuPhim.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_hinh_nen_may_tinh_cute_17_1980_700 {
+            get {
+                object obj = ResourceManager.GetObject("image-hinh-nen-may-tinh-cute_17_1980_700", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_hinh_nen_may_tinh_cute_37_1980_700 {
+            get {
+                object obj = ResourceManager.GetObject("image-hinh-nen-may-tinh-cute_37_1980_700", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_hinh_nen_may_tinh_cute_68_1980_700 {
+            get {
+                object obj = ResourceManager.GetObject("image-hinh-nen-may-tinh-cute_68_1980_700", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kinhlup {
             get {
                 object obj = ResourceManager.GetObject("kinhlup", resourceCulture);

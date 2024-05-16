@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 using System.Security.Cryptography;
@@ -44,7 +45,7 @@ namespace Datalayer
         //Lấy đối tượng theo id t.id
         public TINTUC selectByID(TINTUC t)
         {
-            throw new NotImplementedException();
+            return db.TINTUCs.Where(p => p.id == t.id).FirstOrDefault();
         }
         //Thêm đối tượng t vào table
         public bool insert(TINTUC t)
@@ -65,7 +66,24 @@ namespace Datalayer
         //Cập nhật một đối tượng có id = t.id thành t trong table
         public bool update(TINTUC t)
         {
-            throw new NotImplementedException();
+            TINTUC tintuc = db.TINTUCs.Find(t.id);
+            if(tintuc != null)
+            {
+                tintuc.anhNoiDung = t.anhNoiDung;
+                tintuc.anhTieuDe = t.anhTieuDe;
+                tintuc.tieuDe = t.tieuDe;
+                tintuc.noiDung = t.noiDung;
+                db.SaveChanges();
+                return true;
+            }
+            return false;
+        }
+        //Tìm danh sách tin tức đã đăng của nhân viên
+        public List<TINTUC> selectUpdatedByNV(string maNV)
+        {
+            return (from c in db.TINTUCs
+                   where c.maNhanVien == maNV
+                   select c).ToList();
         }
     }
 }

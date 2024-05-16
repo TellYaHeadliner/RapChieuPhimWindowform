@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations.Model;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,31 @@ namespace BusinessLayer
         public static TAIKHOAN selectByID(string sdt)
         {
             return DMTaiKhoan.run().selectByID(new TAIKHOAN(){soDienThoai = sdt});
+        }
+        public static bool rename(string sdt,string ten)
+        {
+            try
+            {
+                TAIKHOAN t = DMTaiKhoan.run().selectByID(new TAIKHOAN() { soDienThoai = sdt });
+                t.tenNguoiDung = ten;
+                return DMTaiKhoan.run().update(t);
+            }catch (Exception e) { 
+                return false;
+            }
+        }
+        public static bool ChangePass(string sdt, string lastPass, string newPass)
+        {
+            try
+            {
+                TAIKHOAN t = DMTaiKhoan.run().selectByID(new TAIKHOAN() { soDienThoai = sdt });
+                if (lastPass != t.matKhau.Trim())
+                    return false;
+                t.matKhau = newPass;
+                return DMTaiKhoan.run().update(t);
+            }
+            catch (Exception err) {
+                return false;
+            }
         }
     }
 }

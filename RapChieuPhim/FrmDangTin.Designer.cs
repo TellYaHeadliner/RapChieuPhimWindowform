@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ptrTieuDe = new System.Windows.Forms.PictureBox();
-            this.ptrNoiDung = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txbDuongDanTD = new System.Windows.Forms.TextBox();
             this.txbDuongDanND = new System.Windows.Forms.TextBox();
@@ -42,27 +40,11 @@
             this.btnPathTitle = new System.Windows.Forms.Button();
             this.btnPathContent = new System.Windows.Forms.Button();
             this.btnXemTruoc = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrTieuDe)).BeginInit();
+            this.ptrNoiDung = new System.Windows.Forms.PictureBox();
+            this.ptrTieuDe = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptrNoiDung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrTieuDe)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ptrTieuDe
-            // 
-            this.ptrTieuDe.Location = new System.Drawing.Point(16, 101);
-            this.ptrTieuDe.Name = "ptrTieuDe";
-            this.ptrTieuDe.Size = new System.Drawing.Size(138, 138);
-            this.ptrTieuDe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrTieuDe.TabIndex = 0;
-            this.ptrTieuDe.TabStop = false;
-            // 
-            // ptrNoiDung
-            // 
-            this.ptrNoiDung.Location = new System.Drawing.Point(16, 384);
-            this.ptrNoiDung.Name = "ptrNoiDung";
-            this.ptrNoiDung.Size = new System.Drawing.Size(138, 138);
-            this.ptrNoiDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrNoiDung.TabIndex = 1;
-            this.ptrNoiDung.TabStop = false;
             // 
             // label1
             // 
@@ -184,11 +166,29 @@
             this.btnXemTruoc.UseVisualStyleBackColor = true;
             this.btnXemTruoc.Click += new System.EventHandler(this.btnXemTruoc_Click);
             // 
+            // ptrNoiDung
+            // 
+            this.ptrNoiDung.Location = new System.Drawing.Point(16, 384);
+            this.ptrNoiDung.Name = "ptrNoiDung";
+            this.ptrNoiDung.Size = new System.Drawing.Size(138, 138);
+            this.ptrNoiDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrNoiDung.TabIndex = 1;
+            this.ptrNoiDung.TabStop = false;
+            // 
+            // ptrTieuDe
+            // 
+            this.ptrTieuDe.Location = new System.Drawing.Point(16, 101);
+            this.ptrTieuDe.Name = "ptrTieuDe";
+            this.ptrTieuDe.Size = new System.Drawing.Size(138, 138);
+            this.ptrTieuDe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrTieuDe.TabIndex = 0;
+            this.ptrTieuDe.TabStop = false;
+            // 
             // FrmDangTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(991, 549);
             this.Controls.Add(this.btnXemTruoc);
             this.Controls.Add(this.btnPathContent);
@@ -206,8 +206,8 @@
             this.Controls.Add(this.ptrTieuDe);
             this.Name = "FrmDangTin";
             this.Text = "FrmDangTin";
-            ((System.ComponentModel.ISupportInitialize)(this.ptrTieuDe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrNoiDung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrTieuDe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

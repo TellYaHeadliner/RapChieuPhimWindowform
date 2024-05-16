@@ -171,18 +171,21 @@ namespace RapChieuPhim
             // btnTinDaDang
             // 
             this.btnTinDaDang.BackColor = System.Drawing.Color.White;
-            this.btnTinDaDang.Location = new System.Drawing.Point(644, 55);
+            this.btnTinDaDang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTinDaDang.Location = new System.Drawing.Point(685, 56);
             this.btnTinDaDang.Name = "btnTinDaDang";
-            this.btnTinDaDang.Size = new System.Drawing.Size(115, 37);
+            this.btnTinDaDang.Size = new System.Drawing.Size(115, 43);
             this.btnTinDaDang.TabIndex = 9;
             this.btnTinDaDang.Text = "Tin đã đăng";
             this.btnTinDaDang.UseVisualStyleBackColor = false;
+            this.btnTinDaDang.Click += new System.EventHandler(this.btnTinDaDang_Click);
             // 
             // btnDangTin
             // 
-            this.btnDangTin.Location = new System.Drawing.Point(765, 55);
+            this.btnDangTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangTin.Location = new System.Drawing.Point(814, 55);
             this.btnDangTin.Name = "btnDangTin";
-            this.btnDangTin.Size = new System.Drawing.Size(115, 37);
+            this.btnDangTin.Size = new System.Drawing.Size(115, 43);
             this.btnDangTin.TabIndex = 10;
             this.btnDangTin.Text = "Đăng tin";
             this.btnDangTin.UseVisualStyleBackColor = true;
@@ -193,7 +196,7 @@ namespace RapChieuPhim
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(991, 549);
             this.Controls.Add(this.btnDangTin);
             this.Controls.Add(this.btnTinDaDang);
