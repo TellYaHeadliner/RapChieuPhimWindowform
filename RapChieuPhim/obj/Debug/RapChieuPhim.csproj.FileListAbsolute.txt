@@ -1,0 +1,50 @@
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.exe.config
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.exe
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.pdb
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.AssemblyReference.cache
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.Properties.Resources.resources
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.TrangChu.resources
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.GenerateResource.cache
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.CoreCompileInputs.cache
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.exe
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.pdb
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\BusinessLayer.dll
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\Model.dll
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\Datalayer.dll
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.dll
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\BusinessLayer.pdb
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\Model.pdb
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\Model.dll.config
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\Datalayer.pdb
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.xml
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieu.FBFCA39F.Up2Date
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\IT\LT Windown\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.exe.config
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.exe
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\RapChieuPhim.pdb
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\BusinessLayer.dll
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.dll
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.dll
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Model.dll
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Datalayer.dll
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\BusinessLayer.pdb
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Model.pdb
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Model.dll.config
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\bin\Debug\Datalayer.pdb
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.AssemblyReference.cache
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.SuggestedBindingRedirects.cache
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.Properties.Resources.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.GenerateResource.cache
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.CoreCompileInputs.cache
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.csproj.CopyComplete
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.exe
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.pdb
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.FrmDangTin.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.TrangChu_NhanVien.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.frmTinDaDang.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.FrmEditTinTuc.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.FrmHienThiThTinKhachHang.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.ReName.resources
+D:\study\IT\C#\RapChieuPhim\RapChieuPhim\obj\Debug\RapChieuPhim.ChangePass.resources
